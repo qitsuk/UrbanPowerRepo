@@ -9,12 +9,14 @@
         <a-assets>
             <img id="sky" src="assets/sky_2.jpg" crossorigin="anonymous">
             <img id="plane" src="assets/plane.png">
-            
+            <a-asset item id="rolls_mtl" src="assets/SLK.mtl"></a-asset>
+            <a-asset item id="rolls_obj" src="assets/SLK.obj"></a-asset> 
         </a-assets>
 
-
+        <a-entity id="ConvertibleCar" obj-model="obj: #rolls_obj; mtl: #rolls_mtl;" scale="0.01 0.01 0.01" position="6 1.768 4" rotation="0 180 0"></a-entity>
 
         <a-sky id="The Sky" src="#sky"></a-sky>
         <a-plane width="50" height="50" rotation="-90 0 0" src="#plane" scale="2 2 2"></a-plane>
+        <a-box id="The Grass" geometry="width: 38.1; height: 0.89; depth: 50"></a-box>
     </a-scene>
 </body>

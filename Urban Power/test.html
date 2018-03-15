@@ -1,0 +1,42 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta charset="UTF-8" />
+    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+    <title>Rådmandshaven</title>
+</head>
+<body class="a-body ">
+    <a-scene class="fullscreen" inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui=""><canvas class="a-canvas" data-aframe-canvas="true" width="300" height="150"></canvas>
+        <a-assets>
+            <img id="sky" src="assets/sky_2.jpg" crossorigin="anonymous">
+            <img id="plane" src="assets/plane.png">
+            <img id="sidewalk_texture" src="assets/sidewalk-texture.jpg">
+            <a-asset item="" id="rolls_mtl" src="assets/SLK.mtl"></a-asset>
+            <a-asset item="" id="rolls_obj" src="assets/SLK.obj"></a-asset>
+            <a-asset-item id="tree_one" src="assets/tree1.dae"></a-asset-item>
+            <a-asset item id="tree_two_mtl" src="assets/tree01.mtl"></a-asset>
+            <a-asset item id="tree_two_obj" src="assets/tree01.obj"></a-asset>
+
+
+        </a-assets>
+
+        <a-entity id="Mercedes SLK" obj-model="obj:assets/SLK.obj;mtl:assets/SLK.mtl" scale="0.01 0.01 0.01" position="3.561 1.768 4" rotation="0 180 0"></a-entity>
+
+        <a-sky id="The Sky" src="#sky" material="" geometry=""></a-sky>
+        <a-plane width="50" height="50" rotation="-90 0 0" src="#plane" scale="2 2 2" material="" geometry=""></a-plane>
+        <a-box id="The Grass" geometry="width:38.69;height:0.1;depth:50" position="30.994 0 27.561" color="darkgreen" material=""></a-box>
+
+
+        <!-- Sidewalks! -->
+        <a-box id="Sidewalk One" depth="50" height="0.1" width="2" position="10.645 0 26.556" material="" geometry="depth:52" src="#sidewalk_texture" repeat="1 60"></a-box>
+        <a-box id="Sidewalk Two" depth="50" height="0.1" width="2" position="37.631 0 1.557" material="" geometry="depth:52" src="#sidewalk_texture" repeat="1 60" rotation="0 -90 0"></a-box>
+
+        <!-- All things related to the park! -->
+        <a-text value="Park/Playground" position="23.096 12.303 12.571" rotation="0 -119.99999999999999 0" scale="3 3 3" text="color:#000000"></a-text>
+        <a-collada-model id="Park Tree One" src="#tree_one" position="19.868 0 7.358" scale="4 4 4" collada-model="assets/tree1.dae"></a-collada-model>
+        <a-collada-model id="Park Tree Two" src="#tree_one" position="21.804 0 13.049" scale="3 3 3" collada-model="assets/tree1.dae"></a-collada-model>
+        <a-collada-model id="Park Tree Three" src="#tree_one" position="23.868 0 17.971" scale="4.5 4.5 4.5" collada-model="assets/tree1.dae"></a-collada-model>
+        <a-collada-model id="Park Tree Four" src="#tree_one" position="14.682 0 10.56" scale="3.5 3.5 3.5" collada-model="assets/tree1.dae"></a-collada-model>
+        <a-collada-model id="Park Tree Five" src="#tree_one" position="27.868 0 11.705" scale="5 5 5" collada-model="assets/tree1.dae"></a-collada-model>
+        <!-- <a-entity id="Park Tree Six" obj-model="obj: #tree_two_obj; mtl: #tree_two_mtl;"></a-entity> -->
+    </a-scene>
+</body>
+</html>

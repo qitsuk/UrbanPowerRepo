@@ -1,0 +1,1626 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 2.79.0</authoring_tool>
+    </contributor>
+    <created>2017-12-20T09:36:55</created>
+    <modified>2017-12-20T09:36:55</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_cameras>
+    <camera id="Камера-camera" name="Камера">
+      <optics>
+        <technique_common>
+          <perspective>
+            <xfov sid="xfov">49.13434</xfov>
+            <aspect_ratio>1.777778</aspect_ratio>
+            <znear sid="znear">0.1</znear>
+            <zfar sid="zfar">100</zfar>
+          </perspective>
+        </technique_common>
+      </optics>
+      <extra>
+        <technique profile="blender">
+          <YF_dofdist>0</YF_dofdist>
+          <shiftx>0</shiftx>
+          <shifty>0</shifty>
+        </technique>
+      </extra>
+    </camera>
+  </library_cameras>
+  <library_lights>
+    <light id="Солнце-light" name="Солнце">
+      <technique_common>
+        <directional>
+          <color sid="color">1 1 1</color>
+        </directional>
+      </technique_common>
+      <extra>
+        <technique profile="blender">
+          <adapt_thresh>0.000999987</adapt_thresh>
+          <area_shape>0</area_shape>
+          <area_size>0.1</area_size>
+          <area_sizey>0.1</area_sizey>
+          <area_sizez>0.1</area_sizez>
+          <atm_distance_factor>1</atm_distance_factor>
+          <atm_extinction_factor>1</atm_extinction_factor>
+          <atm_turbidity>2</atm_turbidity>
+          <att1>0</att1>
+          <att2>1</att2>
+          <backscattered_light>1</backscattered_light>
+          <bias>1</bias>
+          <blue>1</blue>
+          <buffers>1</buffers>
+          <bufflag>0</bufflag>
+          <bufsize>512</bufsize>
+          <buftype>2</buftype>
+          <clipend>40</clipend>
+          <clipsta>0.5</clipsta>
+          <compressthresh>0.04999995</compressthresh>
+          <dist sid="blender_dist">25</dist>
+          <energy sid="blender_energy">1</energy>
+          <falloff_type>2</falloff_type>
+          <filtertype>0</filtertype>
+          <flag>0</flag>
+          <gamma sid="blender_gamma">1</gamma>
+          <green>1</green>
+          <halo_intensity sid="blnder_halo_intensity">1</halo_intensity>
+          <horizon_brightness>1</horizon_brightness>
+          <mode>1</mode>
+          <ray_samp>1</ray_samp>
+          <ray_samp_method>1</ray_samp_method>
+          <ray_samp_type>0</ray_samp_type>
+          <ray_sampy>1</ray_sampy>
+          <ray_sampz>1</ray_sampz>
+          <red>1</red>
+          <samp>3</samp>
+          <shadhalostep>0</shadhalostep>
+          <shadow_b sid="blender_shadow_b">0</shadow_b>
+          <shadow_g sid="blender_shadow_g">0</shadow_g>
+          <shadow_r sid="blender_shadow_r">0</shadow_r>
+          <sky_colorspace>2</sky_colorspace>
+          <sky_exposure>1</sky_exposure>
+          <skyblendfac>1</skyblendfac>
+          <skyblendtype>1</skyblendtype>
+          <soft>3</soft>
+          <spotblend>0.15</spotblend>
+          <spotsize>45</spotsize>
+          <spread>1</spread>
+          <sun_brightness>1</sun_brightness>
+          <sun_effect_type>0</sun_effect_type>
+          <sun_intensity>1</sun_intensity>
+          <sun_size>1</sun_size>
+          <type>1</type>
+        </technique>
+      </extra>
+    </light>
+  </library_lights>
+  <library_images>
+    <image id="uuuu" name="uuuu">
+      <init_from>uuuu.png</init_from>
+    </image>
+  </library_images>
+  <library_effects>
+    <effect id="Материал-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.2163566 0.3360184 0.06338207 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Материал_001-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.02914185 0.1025909 0.004558424 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Материал_002-effect">
+      <profile_COMMON>
+        <newparam sid="uuuu-surface">
+          <surface type="2D">
+            <init_from>uuuu</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="uuuu-sampler">
+          <sampler2D>
+            <source>uuuu-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="uuuu-sampler"/>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.1915888 0.1915888 0.1915888 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+          <extra>
+            <technique profile="FCOLLADA">
+              <bump>
+                <texture texture="uuuu-sampler"/>
+              </bump>
+            </technique>
+          </extra>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Материал_003-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.7999999 0.7999999 0.7999999 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="Материал-material" name="Материал">
+      <instance_effect url="#Материал-effect"/>
+    </material>
+    <material id="Материал_001-material" name="Материал_001">
+      <instance_effect url="#Материал_001-effect"/>
+    </material>
+    <material id="Материал_002-material" name="Материал_002">
+      <instance_effect url="#Материал_002-effect"/>
+    </material>
+    <material id="Материал_003-material" name="Материал_003">
+      <instance_effect url="#Материал_003-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="Икосфера-mesh" name="Икосфера">
+      <mesh>
+        <source id="Икосфера-mesh-positions">
+          <float_array id="Икосфера-mesh-positions-array" count="36">0.2023083 0.3142048 -0.7128133 0.7722625 -0.2842182 -0.2901357 0.01598292 -0.7368561 -0.2604813 -0.7370677 0 -0.447215 -0.276385 0.6700806 -0.447215 0.7236 0.52572 -0.447215 0.276385 -0.7092797 0.447215 -0.5306378 -0.4757725 0.447215 -0.4631757 0.52572 0.218426 0.5071197 0.6161807 0.447215 0.8066523 0 0.447215 0.09214752 0 0.768639</float_array>
+          <technique_common>
+            <accessor source="#Икосфера-mesh-positions-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Икосфера-mesh-normals">
+          <float_array id="Икосфера-mesh-normals-array" count="60">0.2155749 -0.4180046 -0.8824962 0.4932529 -0.1369657 -0.8590354 -0.1355266 -0.3712896 -0.9185732 -0.3353862 0.2305791 -0.9134273 0.09762656 0.6762588 -0.7301665 0.9967793 0.04733359 -0.06473463 0.5031903 -0.8507023 -0.1520037 -0.6494542 -0.7232355 -0.2348185 -0.8192437 0.5632328 -0.1077434 0.1425759 0.9876223 -0.06537806 0.7863382 -0.5878773 0.1899278 -0.2752699 -0.9513587 0.1383586 -0.9488147 0.1297006 0.287973 -0.1321237 0.9757457 0.1745381 0.8861355 0.4307608 0.1709066 0.3922212 -0.29323 0.8718823 -0.1262955 -0.4364896 0.8908009 -0.5743331 0.2188911 0.7888144 -0.2384949 0.5705555 0.7858669 0.4023324 0.1955785 0.8943588</float_array>
+          <technique_common>
+            <accessor source="#Икосфера-mesh-normals-array" count="20" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Икосфера-mesh-vertices">
+          <input semantic="POSITION" source="#Икосфера-mesh-positions"/>
+        </vertices>
+        <triangles material="Материал-material" count="20">
+          <input semantic="VERTEX" source="#Икосфера-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Икосфера-mesh-normals" offset="1"/>
+          <p>0 0 1 0 2 0 1 1 0 1 5 1 0 2 2 2 3 2 0 3 3 3 4 3 0 4 4 4 5 4 1 5 5 5 10 5 2 6 1 6 6 6 3 7 2 7 7 7 4 8 3 8 8 8 5 9 4 9 9 9 1 10 10 10 6 10 2 11 6 11 7 11 3 12 7 12 8 12 4 13 8 13 9 13 5 14 9 14 10 14 6 15 10 15 11 15 7 16 6 16 11 16 8 17 7 17 11 17 9 18 8 18 11 18 10 19 9 19 11 19</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Икосфера_001-mesh" name="Икосфера.001">
+      <mesh>
+        <source id="Икосфера_001-mesh-positions">
+          <float_array id="Икосфера_001-mesh-positions-array" count="36">0.2023083 0.3142048 -0.7128133 0.7722625 -0.2842182 -0.2901357 0.01598292 -0.7368561 -0.2604813 -0.7370677 0 -0.447215 -0.276385 0.6700806 -0.447215 0.7236 0.52572 -0.447215 0.276385 -0.7092797 0.447215 -0.5306378 -0.4757725 0.447215 -0.4631757 0.52572 0.218426 0.5071197 0.6161807 0.447215 0.8066523 0 0.447215 0.09214752 0 0.768639</float_array>
+          <technique_common>
+            <accessor source="#Икосфера_001-mesh-positions-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Икосфера_001-mesh-normals">
+          <float_array id="Икосфера_001-mesh-normals-array" count="60">0.2155749 -0.4180046 -0.8824962 0.4932529 -0.1369657 -0.8590354 -0.1355266 -0.3712896 -0.9185732 -0.3353862 0.2305791 -0.9134273 0.09762656 0.6762588 -0.7301665 0.9967793 0.04733359 -0.06473463 0.5031903 -0.8507023 -0.1520037 -0.6494542 -0.7232355 -0.2348185 -0.8192437 0.5632328 -0.1077434 0.1425759 0.9876223 -0.06537806 0.7863382 -0.5878773 0.1899278 -0.2752699 -0.9513587 0.1383586 -0.9488147 0.1297006 0.287973 -0.1321237 0.9757457 0.1745381 0.8861355 0.4307608 0.1709066 0.3922212 -0.29323 0.8718823 -0.1262955 -0.4364896 0.8908009 -0.5743331 0.2188911 0.7888144 -0.2384949 0.5705555 0.7858669 0.4023324 0.1955785 0.8943588</float_array>
+          <technique_common>
+            <accessor source="#Икосфера_001-mesh-normals-array" count="20" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Икосфера_001-mesh-vertices">
+          <input semantic="POSITION" source="#Икосфера_001-mesh-positions"/>
+        </vertices>
+        <triangles material="Материал-material" count="20">
+          <input semantic="VERTEX" source="#Икосфера_001-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Икосфера_001-mesh-normals" offset="1"/>
+          <p>0 0 1 0 2 0 1 1 0 1 5 1 0 2 2 2 3 2 0 3 3 3 4 3 0 4 4 4 5 4 1 5 5 5 10 5 2 6 1 6 6 6 3 7 2 7 7 7 4 8 3 8 8 8 5 9 4 9 9 9 1 10 10 10 6 10 2 11 6 11 7 11 3 12 7 12 8 12 4 13 8 13 9 13 5 14 9 14 10 14 6 15 10 15 11 15 7 16 6 16 11 16 8 17 7 17 11 17 9 18 8 18 11 18 10 19 9 19 11 19</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Икосфера_002-mesh" name="Икосфера.002">
+      <mesh>
+        <source id="Икосфера_002-mesh-positions">
+          <float_array id="Икосфера_002-mesh-positions-array" count="36">0.2023083 0.3142048 -0.7128133 0.7722625 -0.2842182 -0.2901357 0.01598292 -0.7368561 -0.2604813 -0.7370677 0 -0.447215 -0.276385 0.6700806 -0.447215 0.7236 0.52572 -0.447215 0.276385 -0.7092797 0.447215 -0.5306378 -0.4757725 0.447215 -0.4631757 0.52572 0.218426 0.5071197 0.6161807 0.447215 0.8066523 0 0.447215 0.09214752 0 0.768639</float_array>
+          <technique_common>
+            <accessor source="#Икосфера_002-mesh-positions-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Икосфера_002-mesh-normals">
+          <float_array id="Икосфера_002-mesh-normals-array" count="60">0.2155749 -0.4180046 -0.8824962 0.4932529 -0.1369657 -0.8590354 -0.1355266 -0.3712896 -0.9185732 -0.3353862 0.2305791 -0.9134273 0.09762656 0.6762588 -0.7301665 0.9967793 0.04733359 -0.06473463 0.5031903 -0.8507023 -0.1520037 -0.6494542 -0.7232355 -0.2348185 -0.8192437 0.5632328 -0.1077434 0.1425759 0.9876223 -0.06537806 0.7863382 -0.5878773 0.1899278 -0.2752699 -0.9513587 0.1383586 -0.9488147 0.1297006 0.287973 -0.1321237 0.9757457 0.1745381 0.8861355 0.4307608 0.1709066 0.3922212 -0.29323 0.8718823 -0.1262955 -0.4364896 0.8908009 -0.5743331 0.2188911 0.7888144 -0.2384949 0.5705555 0.7858669 0.4023324 0.1955785 0.8943588</float_array>
+          <technique_common>
+            <accessor source="#Икосфера_002-mesh-normals-array" count="20" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Икосфера_002-mesh-vertices">
+          <input semantic="POSITION" source="#Икосфера_002-mesh-positions"/>
+        </vertices>
+        <triangles material="Материал-material" count="20">
+          <input semantic="VERTEX" source="#Икосфера_002-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Икосфера_002-mesh-normals" offset="1"/>
+          <p>0 0 1 0 2 0 1 1 0 1 5 1 0 2 2 2 3 2 0 3 3 3 4 3 0 4 4 4 5 4 1 5 5 5 10 5 2 6 1 6 6 6 3 7 2 7 7 7 4 8 3 8 8 8 5 9 4 9 9 9 1 10 10 10 6 10 2 11 6 11 7 11 3 12 7 12 8 12 4 13 8 13 9 13 5 14 9 14 10 14 6 15 10 15 11 15 7 16 6 16 11 16 8 17 7 17 11 17 9 18 8 18 11 18 10 19 9 19 11 19</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Икосфера_003-mesh" name="Икосфера.003">
+      <mesh>
+        <source id="Икосфера_003-mesh-positions">
+          <float_array id="Икосфера_003-mesh-positions-array" count="36">0.2023083 0.3142048 -0.7128133 0.7722625 -0.2842182 -0.2901357 0.01598292 -0.7368561 -0.2604813 -0.7370677 0 -0.447215 -0.276385 0.6700806 -0.447215 0.7236 0.52572 -0.447215 0.276385 -0.7092797 0.447215 -0.5306378 -0.4757725 0.447215 -0.4631757 0.52572 0.218426 0.5071197 0.6161807 0.447215 0.8066523 0 0.447215 0.09214752 0 0.768639</float_array>
+          <technique_common>
+            <accessor source="#Икосфера_003-mesh-positions-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Икосфера_003-mesh-normals">
+          <float_array id="Икосфера_003-mesh-normals-array" count="60">0.2155749 -0.4180046 -0.8824962 0.4932529 -0.1369657 -0.8590354 -0.1355266 -0.3712896 -0.9185732 -0.3353862 0.2305791 -0.9134273 0.09762656 0.6762588 -0.7301665 0.9967793 0.04733359 -0.06473463 0.5031903 -0.8507023 -0.1520037 -0.6494542 -0.7232355 -0.2348185 -0.8192437 0.5632328 -0.1077434 0.1425759 0.9876223 -0.06537806 0.7863382 -0.5878773 0.1899278 -0.2752699 -0.9513587 0.1383586 -0.9488147 0.1297006 0.287973 -0.1321237 0.9757457 0.1745381 0.8861355 0.4307608 0.1709066 0.3922212 -0.29323 0.8718823 -0.1262955 -0.4364896 0.8908009 -0.5743331 0.2188911 0.7888144 -0.2384949 0.5705555 0.7858669 0.4023324 0.1955785 0.8943588</float_array>
+          <technique_common>
+            <accessor source="#Икосфера_003-mesh-normals-array" count="20" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Икосфера_003-mesh-vertices">
+          <input semantic="POSITION" source="#Икосфера_003-mesh-positions"/>
+        </vertices>
+        <triangles material="Материал-material" count="20">
+          <input semantic="VERTEX" source="#Икосфера_003-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Икосфера_003-mesh-normals" offset="1"/>
+          <p>0 0 1 0 2 0 1 1 0 1 5 1 0 2 2 2 3 2 0 3 3 3 4 3 0 4 4 4 5 4 1 5 5 5 10 5 2 6 1 6 6 6 3 7 2 7 7 7 4 8 3 8 8 8 5 9 4 9 9 9 1 10 10 10 6 10 2 11 6 11 7 11 3 12 7 12 8 12 4 13 8 13 9 13 5 14 9 14 10 14 6 15 10 15 11 15 7 16 6 16 11 16 8 17 7 17 11 17 9 18 8 18 11 18 10 19 9 19 11 19</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Икосфера_004-mesh" name="Икосфера.004">
+      <mesh>
+        <source id="Икосфера_004-mesh-positions">
+          <float_array id="Икосфера_004-mesh-positions-array" count="36">0.2023083 0.3142048 -0.7128133 0.7722625 -0.2842182 -0.2901357 0.01598292 -0.7368561 -0.2604813 -0.7370677 0 -0.447215 -0.276385 0.6700806 -0.447215 0.7236 0.52572 -0.447215 0.276385 -0.7092797 0.447215 -0.5306378 -0.4757725 0.447215 -0.4631757 0.52572 0.218426 0.5071197 0.6161807 0.447215 0.8066523 0 0.447215 0.09214752 0 0.768639</float_array>
+          <technique_common>
+            <accessor source="#Икосфера_004-mesh-positions-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Икосфера_004-mesh-normals">
+          <float_array id="Икосфера_004-mesh-normals-array" count="60">0.2155749 -0.4180046 -0.8824962 0.4932529 -0.1369657 -0.8590354 -0.1355266 -0.3712896 -0.9185732 -0.3353862 0.2305791 -0.9134273 0.09762656 0.6762588 -0.7301665 0.9967793 0.04733359 -0.06473463 0.5031903 -0.8507023 -0.1520037 -0.6494542 -0.7232355 -0.2348185 -0.8192437 0.5632328 -0.1077434 0.1425759 0.9876223 -0.06537806 0.7863382 -0.5878773 0.1899278 -0.2752699 -0.9513587 0.1383586 -0.9488147 0.1297006 0.287973 -0.1321237 0.9757457 0.1745381 0.8861355 0.4307608 0.1709066 0.3922212 -0.29323 0.8718823 -0.1262955 -0.4364896 0.8908009 -0.5743331 0.2188911 0.7888144 -0.2384949 0.5705555 0.7858669 0.4023324 0.1955785 0.8943588</float_array>
+          <technique_common>
+            <accessor source="#Икосфера_004-mesh-normals-array" count="20" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Икосфера_004-mesh-vertices">
+          <input semantic="POSITION" source="#Икосфера_004-mesh-positions"/>
+        </vertices>
+        <triangles material="Материал-material" count="20">
+          <input semantic="VERTEX" source="#Икосфера_004-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Икосфера_004-mesh-normals" offset="1"/>
+          <p>0 0 1 0 2 0 1 1 0 1 5 1 0 2 2 2 3 2 0 3 3 3 4 3 0 4 4 4 5 4 1 5 5 5 10 5 2 6 1 6 6 6 3 7 2 7 7 7 4 8 3 8 8 8 5 9 4 9 9 9 1 10 10 10 6 10 2 11 6 11 7 11 3 12 7 12 8 12 4 13 8 13 9 13 5 14 9 14 10 14 6 15 10 15 11 15 7 16 6 16 11 16 8 17 7 17 11 17 9 18 8 18 11 18 10 19 9 19 11 19</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Икосфера_005-mesh" name="Икосфера.005">
+      <mesh>
+        <source id="Икосфера_005-mesh-positions">
+          <float_array id="Икосфера_005-mesh-positions-array" count="36">0.2023083 0.3142048 -0.7128133 0.7722625 -0.2842182 -0.2901357 0.01598292 -0.7368561 -0.2604813 -0.7370677 0 -0.447215 -0.276385 0.6700806 -0.447215 0.7236 0.52572 -0.447215 0.276385 -0.7092797 0.447215 -0.5306378 -0.4757725 0.447215 -0.4631757 0.52572 0.218426 0.5071197 0.6161807 0.447215 0.8066523 0 0.447215 0.09214752 0 0.768639</float_array>
+          <technique_common>
+            <accessor source="#Икосфера_005-mesh-positions-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Икосфера_005-mesh-normals">
+          <float_array id="Икосфера_005-mesh-normals-array" count="60">0.2155749 -0.4180046 -0.8824962 0.4932529 -0.1369657 -0.8590354 -0.1355266 -0.3712896 -0.9185732 -0.3353862 0.2305791 -0.9134273 0.09762656 0.6762588 -0.7301665 0.9967793 0.04733359 -0.06473463 0.5031903 -0.8507023 -0.1520037 -0.6494542 -0.7232355 -0.2348185 -0.8192437 0.5632328 -0.1077434 0.1425759 0.9876223 -0.06537806 0.7863382 -0.5878773 0.1899278 -0.2752699 -0.9513587 0.1383586 -0.9488147 0.1297006 0.287973 -0.1321237 0.9757457 0.1745381 0.8861355 0.4307608 0.1709066 0.3922212 -0.29323 0.8718823 -0.1262955 -0.4364896 0.8908009 -0.5743331 0.2188911 0.7888144 -0.2384949 0.5705555 0.7858669 0.4023324 0.1955785 0.8943588</float_array>
+          <technique_common>
+            <accessor source="#Икосфера_005-mesh-normals-array" count="20" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Икосфера_005-mesh-vertices">
+          <input semantic="POSITION" source="#Икосфера_005-mesh-positions"/>
+        </vertices>
+        <triangles material="Материал-material" count="20">
+          <input semantic="VERTEX" source="#Икосфера_005-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Икосфера_005-mesh-normals" offset="1"/>
+          <p>0 0 1 0 2 0 1 1 0 1 5 1 0 2 2 2 3 2 0 3 3 3 4 3 0 4 4 4 5 4 1 5 5 5 10 5 2 6 1 6 6 6 3 7 2 7 7 7 4 8 3 8 8 8 5 9 4 9 9 9 1 10 10 10 6 10 2 11 6 11 7 11 3 12 7 12 8 12 4 13 8 13 9 13 5 14 9 14 10 14 6 15 10 15 11 15 7 16 6 16 11 16 8 17 7 17 11 17 9 18 8 18 11 18 10 19 9 19 11 19</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Цилиндр_001-mesh" name="Цилиндр.001">
+      <mesh>
+        <source id="Цилиндр_001-mesh-positions">
+          <float_array id="Цилиндр_001-mesh-positions-array" count="144">0.06787896 0.854096 -1.033109 -0.04987215 1.171401 1.093374 0.7432286 0.3508161 -1.106965 0.9319486 0.5433092 1.150796 0.6753496 -0.5032799 -1.073856 0.8920021 -0.6280917 1.12637 -0.06787902 -0.854096 -0.9668912 -0.1297652 -1.171401 1.044522 -0.7432286 -0.350816 -0.8930351 -1.111586 -0.543309 0.9871 -0.6753497 0.5032798 -0.9261438 -1.071639 0.6280916 1.011526 0.469985 1 -0.3152047 0.469985 1 0.351462 1.33601 0.5 0.351462 1.33601 0.5 -0.3152047 1.33601 -0.5000001 0.351462 1.33601 -0.5000001 -0.3152047 0.4699849 -1 0.351462 0.4699849 -1 -0.3152047 -0.3960404 -0.4999999 0.351462 -0.3960404 -0.4999999 -0.3152047 -0.3960404 0.4999999 0.351462 -0.3960404 0.4999999 -0.3152047 4.351013 2.408401 2.589112 -4.624048 1.934604 0.5259711 3.349754 1.204201 3.357714 -5.428332 0.967302 1.143369 3.349754 -1.204201 3.357714 -5.428332 -0.9673022 1.143369 4.351013 -2.408401 2.589111 -4.624048 -1.934604 0.525971 5.352272 -1.2042 1.820509 -3.819764 -0.9673018 -0.09142649 5.352272 1.2042 1.820509 -3.819764 0.9673018 -0.09142649 1.179006 2.148877 2.039818 -1.812681 2.148877 1.352104 -2.706046 1.074439 2.037884 0.2856408 1.074439 2.725597 -2.706046 -1.074439 2.037884 0.2856408 -1.074439 2.725597 -1.81268 -2.148877 1.352104 1.179006 -2.148877 2.039818 -0.9193153 -1.074438 0.666325 2.072371 -1.074438 1.354038 -0.9193153 1.074438 0.666325 2.072371 1.074438 1.354038</float_array>
+          <technique_common>
+            <accessor source="#Цилиндр_001-mesh-positions-array" count="48" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Цилиндр_001-mesh-normals">
+          <float_array id="Цилиндр_001-mesh-normals-array" count="255">0.4897339 0.8482441 0.2016003 0.8924559 0 0.4511347 0.4949412 -0.8572637 0.1418876 -0.4198234 -0.7271552 -0.5431333 -0.07010638 -0.01840633 0.9973697 -0.4380295 0.7586895 -0.4822037 -0.664129 0 -0.747618 -0.129369 -0.02814179 -0.9911971 -0.9057502 0.08805453 0.4145637 -1 0 0 -0.3972948 0.8985488 0.1864591 -0.5000001 0.8660254 0 -0.5813761 -0.8010587 0.1425017 -0.5000001 -0.8660254 0 0.3258696 -0.8289715 -0.4545495 0.4999999 -0.8660255 0 0.751578 -0.08508872 -0.6541333 1 0 0 0.5069186 0.7440915 -0.4351568 0.5 0.8660255 0 -0.2571812 0.662736 0.7033056 -0.3121691 0 0.9500266 -0.2571812 -0.6627361 0.7033056 0.1747093 -0.6288469 -0.7576466 -0.6089158 0 -0.7932349 0.1747092 0.6288469 -0.7576465 0.2527694 0 -0.9675266 0.6089157 0 0.793235 0.1408041 0 -0.9900375 0.2240318 0 -0.9745818 0.09098112 0.5884374 -0.8034076 0.1742301 0.6286325 -0.7579348 0.09098118 -0.5884374 -0.8034077 0.1742301 -0.6286324 -0.7579348 -0.1821403 -0.6321474 0.7531365 -0.17423 -0.6286327 0.7579346 -0.2020421 0 0.9793769 -0.2240318 0 0.9745818 -0.1821404 0.6321473 0.7531366 -0.1742301 0.6286326 0.7579346 0.5234175 0.8341091 0.1740576 0.8698024 -0.03991627 0.491783 0.4513977 -0.8751562 0.1741888 -0.4324088 -0.7249503 -0.536162 -0.07010626 -0.01840645 0.9973697 -0.07010632 -0.01840656 0.9973697 -0.07010626 -0.01840621 0.9973697 -0.3666315 0.7684994 -0.5243949 -0.6945524 0.03866529 -0.7184024 -0.1293689 -0.02814209 -0.9911971 -0.1293689 -0.02814191 -0.9911971 -0.1293689 -0.02814179 -0.9911971 -0.8571721 0 0.51503 -1 0 0 -0.4973154 0.8613753 0.1034892 -0.5000001 0.8660254 0 -0.4884471 -0.846015 0.2137241 -0.5000001 -0.8660254 0 0.4590553 -0.7951072 -0.3963242 0.4999999 -0.8660255 0 0.8005036 0 -0.5993279 0.4404082 0.7628096 -0.4734576 0.5 0.8660254 0 -0.312169 0 0.9500266 -0.2571813 -0.6627361 0.7033055 0.1747093 -0.6288469 -0.7576466 -0.6089158 0 -0.7932349 -0.6089159 0 -0.7932348 -0.6089158 0 -0.7932349 0.1747093 0.6288469 -0.7576465 0.2527694 0 -0.9675266 0.6089158 0 0.793235 0.6089158 0 0.7932349 0.6089158 0 0.7932349 0.1408041 0 -0.9900375 0.2240318 0 -0.9745818 0.0909813 0.5884374 -0.8034077 0.17423 0.6286325 -0.7579348 0.09098118 -0.5884372 -0.8034078 0.17423 -0.6286325 -0.7579348 -0.1821403 -0.6321474 0.7531365 -0.17423 -0.6286327 0.7579346 -0.2020422 0 0.9793769 -0.1821404 0.6321472 0.7531366 -0.17423 0.6286326 0.7579347</float_array>
+          <technique_common>
+            <accessor source="#Цилиндр_001-mesh-normals-array" count="85" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Цилиндр_001-mesh-vertices">
+          <input semantic="POSITION" source="#Цилиндр_001-mesh-positions"/>
+        </vertices>
+        <triangles material="Материал_001-material" count="88">
+          <input semantic="VERTEX" source="#Цилиндр_001-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Цилиндр_001-mesh-normals" offset="1"/>
+          <p>13 0 3 0 14 0 3 1 16 1 14 1 5 2 18 2 16 2 7 3 20 3 18 3 11 4 9 4 3 4 22 5 1 5 13 5 9 6 22 6 20 6 2 7 8 7 10 7 8 8 23 8 10 8 20 9 23 9 21 9 23 10 0 10 10 10 22 11 12 11 23 11 6 12 21 12 8 12 18 13 21 13 19 13 4 14 19 14 6 14 16 15 19 15 17 15 2 16 17 16 4 16 14 17 17 17 15 17 12 18 2 18 0 18 12 19 14 19 15 19 25 20 38 20 37 20 27 21 40 21 38 21 40 22 31 22 42 22 42 23 33 23 44 23 35 24 33 24 27 24 35 25 37 25 46 25 33 26 46 26 44 26 26 27 32 27 34 27 32 28 47 28 34 28 44 29 47 29 45 29 47 30 24 30 34 30 46 31 36 31 47 31 30 32 45 32 32 32 43 33 44 33 45 33 28 34 43 34 30 34 41 35 42 35 43 35 26 36 41 36 28 36 38 37 41 37 39 37 36 38 26 38 24 38 37 39 39 39 36 39 13 40 1 40 3 40 3 41 5 41 16 41 5 42 7 42 18 42 7 43 9 43 20 43 5 44 3 44 9 44 1 45 11 45 3 45 9 46 7 46 5 46 22 47 11 47 1 47 9 48 11 48 22 48 10 49 0 49 2 49 2 50 4 50 8 50 6 51 8 51 4 51 8 52 21 52 23 52 20 53 22 53 23 53 23 54 12 54 0 54 22 55 13 55 12 55 6 56 19 56 21 56 18 57 20 57 21 57 4 58 17 58 19 58 16 59 18 59 19 59 2 60 15 60 17 60 14 17 16 17 17 17 12 61 15 61 2 61 12 62 13 62 14 62 25 20 27 20 38 20 27 63 29 63 40 63 40 64 29 64 31 64 42 65 31 65 33 65 29 66 27 66 33 66 25 67 35 67 27 67 33 68 31 68 29 68 35 69 25 69 37 69 33 70 35 70 46 70 34 71 24 71 26 71 26 72 28 72 32 72 30 73 32 73 28 73 32 74 45 74 47 74 44 75 46 75 47 75 47 76 36 76 24 76 46 77 37 77 36 77 30 78 43 78 45 78 43 79 42 79 44 79 28 80 41 80 43 80 41 81 40 81 42 81 26 82 39 82 41 82 38 37 40 37 41 37 36 83 39 83 26 83 37 84 38 84 39 84</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Икосфера_007-mesh" name="Икосфера.007">
+      <mesh>
+        <source id="Икосфера_007-mesh-positions">
+          <float_array id="Икосфера_007-mesh-positions-array" count="36">0.2023083 0.3142048 -0.7128133 0.7722625 -0.2842182 -0.2901357 0.01598292 -0.7368561 -0.2604813 -0.7370677 0 -0.447215 -0.276385 0.6700806 -0.447215 0.7236 0.52572 -0.447215 0.276385 -0.7092797 0.447215 -0.5306378 -0.4757725 0.447215 -0.4631757 0.52572 0.218426 0.5071197 0.6161807 0.447215 0.8066523 0 0.447215 0.09214752 0 0.768639</float_array>
+          <technique_common>
+            <accessor source="#Икосфера_007-mesh-positions-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Икосфера_007-mesh-normals">
+          <float_array id="Икосфера_007-mesh-normals-array" count="60">0.2155749 -0.4180046 -0.8824962 0.4932529 -0.1369657 -0.8590354 -0.1355266 -0.3712896 -0.9185732 -0.3353862 0.2305791 -0.9134273 0.09762656 0.6762588 -0.7301665 0.9967793 0.04733359 -0.06473463 0.5031903 -0.8507023 -0.1520037 -0.6494542 -0.7232355 -0.2348185 -0.8192437 0.5632328 -0.1077434 0.1425759 0.9876223 -0.06537806 0.7863382 -0.5878773 0.1899278 -0.2752699 -0.9513587 0.1383586 -0.9488147 0.1297006 0.287973 -0.1321237 0.9757457 0.1745381 0.8861355 0.4307608 0.1709066 0.3922212 -0.29323 0.8718823 -0.1262955 -0.4364896 0.8908009 -0.5743331 0.2188911 0.7888144 -0.2384949 0.5705555 0.7858669 0.4023324 0.1955785 0.8943588</float_array>
+          <technique_common>
+            <accessor source="#Икосфера_007-mesh-normals-array" count="20" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Икосфера_007-mesh-vertices">
+          <input semantic="POSITION" source="#Икосфера_007-mesh-positions"/>
+        </vertices>
+        <triangles material="Материал-material" count="20">
+          <input semantic="VERTEX" source="#Икосфера_007-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Икосфера_007-mesh-normals" offset="1"/>
+          <p>0 0 1 0 2 0 1 1 0 1 5 1 0 2 2 2 3 2 0 3 3 3 4 3 0 4 4 4 5 4 1 5 5 5 10 5 2 6 1 6 6 6 3 7 2 7 7 7 4 8 3 8 8 8 5 9 4 9 9 9 1 10 10 10 6 10 2 11 6 11 7 11 3 12 7 12 8 12 4 13 8 13 9 13 5 14 9 14 10 14 6 15 10 15 11 15 7 16 6 16 11 16 8 17 7 17 11 17 9 18 8 18 11 18 10 19 9 19 11 19</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Икосфера_010-mesh" name="Икосфера.010">
+      <mesh>
+        <source id="Икосфера_010-mesh-positions">
+          <float_array id="Икосфера_010-mesh-positions-array" count="36">0.2023083 0.3142048 -0.7128133 0.7722625 -0.2842182 -0.2901357 0.01598292 -0.7368561 -0.2604813 -0.7370677 0 -0.447215 -0.276385 0.6700806 -0.447215 0.7236 0.52572 -0.447215 0.276385 -0.7092797 0.447215 -0.5306378 -0.4757725 0.447215 -0.4631757 0.52572 0.218426 0.5071197 0.6161807 0.447215 0.8066523 0 0.447215 0.09214752 0 0.768639</float_array>
+          <technique_common>
+            <accessor source="#Икосфера_010-mesh-positions-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Икосфера_010-mesh-normals">
+          <float_array id="Икосфера_010-mesh-normals-array" count="60">0.2155749 -0.4180046 -0.8824962 0.4932529 -0.1369657 -0.8590354 -0.1355266 -0.3712896 -0.9185732 -0.3353862 0.2305791 -0.9134273 0.09762656 0.6762588 -0.7301665 0.9967793 0.04733359 -0.06473463 0.5031903 -0.8507023 -0.1520037 -0.6494542 -0.7232355 -0.2348185 -0.8192437 0.5632328 -0.1077434 0.1425759 0.9876223 -0.06537806 0.7863382 -0.5878773 0.1899278 -0.2752699 -0.9513587 0.1383586 -0.9488147 0.1297006 0.287973 -0.1321237 0.9757457 0.1745381 0.8861355 0.4307608 0.1709066 0.3922212 -0.29323 0.8718823 -0.1262955 -0.4364896 0.8908009 -0.5743331 0.2188911 0.7888144 -0.2384949 0.5705555 0.7858669 0.4023324 0.1955785 0.8943588</float_array>
+          <technique_common>
+            <accessor source="#Икосфера_010-mesh-normals-array" count="20" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Икосфера_010-mesh-vertices">
+          <input semantic="POSITION" source="#Икосфера_010-mesh-positions"/>
+        </vertices>
+        <triangles material="Материал-material" count="20">
+          <input semantic="VERTEX" source="#Икосфера_010-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Икосфера_010-mesh-normals" offset="1"/>
+          <p>0 0 1 0 2 0 1 1 0 1 5 1 0 2 2 2 3 2 0 3 3 3 4 3 0 4 4 4 5 4 1 5 5 5 10 5 2 6 1 6 6 6 3 7 2 7 7 7 4 8 3 8 8 8 5 9 4 9 9 9 1 10 10 10 6 10 2 11 6 11 7 11 3 12 7 12 8 12 4 13 8 13 9 13 5 14 9 14 10 14 6 15 10 15 11 15 7 16 6 16 11 16 8 17 7 17 11 17 9 18 8 18 11 18 10 19 9 19 11 19</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Икосфера_011-mesh" name="Икосфера.011">
+      <mesh>
+        <source id="Икосфера_011-mesh-positions">
+          <float_array id="Икосфера_011-mesh-positions-array" count="36">0.2023083 0.3142048 -0.7128133 0.7722625 -0.2842182 -0.2901357 0.01598292 -0.7368561 -0.2604813 -0.7370677 0 -0.447215 -0.276385 0.6700806 -0.447215 0.7236 0.52572 -0.447215 0.276385 -0.7092797 0.447215 -0.5306378 -0.4757725 0.447215 -0.4631757 0.52572 0.218426 0.5071197 0.6161807 0.447215 0.8066523 0 0.447215 0.09214752 0 0.768639</float_array>
+          <technique_common>
+            <accessor source="#Икосфера_011-mesh-positions-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Икосфера_011-mesh-normals">
+          <float_array id="Икосфера_011-mesh-normals-array" count="60">0.2155749 -0.4180046 -0.8824962 0.4932529 -0.1369657 -0.8590354 -0.1355266 -0.3712896 -0.9185732 -0.3353862 0.2305791 -0.9134273 0.09762656 0.6762588 -0.7301665 0.9967793 0.04733359 -0.06473463 0.5031903 -0.8507023 -0.1520037 -0.6494542 -0.7232355 -0.2348185 -0.8192437 0.5632328 -0.1077434 0.1425759 0.9876223 -0.06537806 0.7863382 -0.5878773 0.1899278 -0.2752699 -0.9513587 0.1383586 -0.9488147 0.1297006 0.287973 -0.1321237 0.9757457 0.1745381 0.8861355 0.4307608 0.1709066 0.3922212 -0.29323 0.8718823 -0.1262955 -0.4364896 0.8908009 -0.5743331 0.2188911 0.7888144 -0.2384949 0.5705555 0.7858669 0.4023324 0.1955785 0.8943588</float_array>
+          <technique_common>
+            <accessor source="#Икосфера_011-mesh-normals-array" count="20" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Икосфера_011-mesh-vertices">
+          <input semantic="POSITION" source="#Икосфера_011-mesh-positions"/>
+        </vertices>
+        <triangles material="Материал-material" count="20">
+          <input semantic="VERTEX" source="#Икосфера_011-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Икосфера_011-mesh-normals" offset="1"/>
+          <p>0 0 1 0 2 0 1 1 0 1 5 1 0 2 2 2 3 2 0 3 3 3 4 3 0 4 4 4 5 4 1 5 5 5 10 5 2 6 1 6 6 6 3 7 2 7 7 7 4 8 3 8 8 8 5 9 4 9 9 9 1 10 10 10 6 10 2 11 6 11 7 11 3 12 7 12 8 12 4 13 8 13 9 13 5 14 9 14 10 14 6 15 10 15 11 15 7 16 6 16 11 16 8 17 7 17 11 17 9 18 8 18 11 18 10 19 9 19 11 19</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Икосфера_012-mesh" name="Икосфера.012">
+      <mesh>
+        <source id="Икосфера_012-mesh-positions">
+          <float_array id="Икосфера_012-mesh-positions-array" count="36">0.2023083 0.3142048 -0.7128133 0.7722625 -0.2842182 -0.2901357 0.01598292 -0.7368561 -0.2604813 -0.7370677 0 -0.447215 -0.276385 0.6700806 -0.447215 0.7236 0.52572 -0.447215 0.276385 -0.7092797 0.447215 -0.5306378 -0.4757725 0.447215 -0.4631757 0.52572 0.218426 0.5071197 0.6161807 0.447215 0.8066523 0 0.447215 0.09214752 0 0.768639</float_array>
+          <technique_common>
+            <accessor source="#Икосфера_012-mesh-positions-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Икосфера_012-mesh-normals">
+          <float_array id="Икосфера_012-mesh-normals-array" count="60">0.2155749 -0.4180046 -0.8824962 0.4932529 -0.1369657 -0.8590354 -0.1355266 -0.3712896 -0.9185732 -0.3353862 0.2305791 -0.9134273 0.09762656 0.6762588 -0.7301665 0.9967793 0.04733359 -0.06473463 0.5031903 -0.8507023 -0.1520037 -0.6494542 -0.7232355 -0.2348185 -0.8192437 0.5632328 -0.1077434 0.1425759 0.9876223 -0.06537806 0.7863382 -0.5878773 0.1899278 -0.2752699 -0.9513587 0.1383586 -0.9488147 0.1297006 0.287973 -0.1321237 0.9757457 0.1745381 0.8861355 0.4307608 0.1709066 0.3922212 -0.29323 0.8718823 -0.1262955 -0.4364896 0.8908009 -0.5743331 0.2188911 0.7888144 -0.2384949 0.5705555 0.7858669 0.4023324 0.1955785 0.8943588</float_array>
+          <technique_common>
+            <accessor source="#Икосфера_012-mesh-normals-array" count="20" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Икосфера_012-mesh-vertices">
+          <input semantic="POSITION" source="#Икосфера_012-mesh-positions"/>
+        </vertices>
+        <triangles material="Материал-material" count="20">
+          <input semantic="VERTEX" source="#Икосфера_012-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Икосфера_012-mesh-normals" offset="1"/>
+          <p>0 0 1 0 2 0 1 1 0 1 5 1 0 2 2 2 3 2 0 3 3 3 4 3 0 4 4 4 5 4 1 5 5 5 10 5 2 6 1 6 6 6 3 7 2 7 7 7 4 8 3 8 8 8 5 9 4 9 9 9 1 10 10 10 6 10 2 11 6 11 7 11 3 12 7 12 8 12 4 13 8 13 9 13 5 14 9 14 10 14 6 15 10 15 11 15 7 16 6 16 11 16 8 17 7 17 11 17 9 18 8 18 11 18 10 19 9 19 11 19</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Икосфера_017-mesh" name="Икосфера.017">
+      <mesh>
+        <source id="Икосфера_017-mesh-positions">
+          <float_array id="Икосфера_017-mesh-positions-array" count="36">0.2023083 0.3142048 -0.7128133 0.7722625 -0.2842182 -0.2901357 0.01598292 -0.7368561 -0.2604813 -0.7370677 0 -0.447215 -0.276385 0.6700806 -0.447215 0.7236 0.52572 -0.447215 0.276385 -0.7092797 0.447215 -0.5306378 -0.4757725 0.447215 -0.4631757 0.52572 0.218426 0.5071197 0.6161807 0.447215 0.8066523 0 0.447215 0.09214752 0 0.768639</float_array>
+          <technique_common>
+            <accessor source="#Икосфера_017-mesh-positions-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Икосфера_017-mesh-normals">
+          <float_array id="Икосфера_017-mesh-normals-array" count="60">0.2155749 -0.4180046 -0.8824962 0.4932529 -0.1369657 -0.8590354 -0.1355266 -0.3712896 -0.9185732 -0.3353862 0.2305791 -0.9134273 0.09762656 0.6762588 -0.7301665 0.9967793 0.04733359 -0.06473463 0.5031903 -0.8507023 -0.1520037 -0.6494542 -0.7232355 -0.2348185 -0.8192437 0.5632328 -0.1077434 0.1425759 0.9876223 -0.06537806 0.7863382 -0.5878773 0.1899278 -0.2752699 -0.9513587 0.1383586 -0.9488147 0.1297006 0.287973 -0.1321237 0.9757457 0.1745381 0.8861355 0.4307608 0.1709066 0.3922212 -0.29323 0.8718823 -0.1262955 -0.4364896 0.8908009 -0.5743331 0.2188911 0.7888144 -0.2384949 0.5705555 0.7858669 0.4023324 0.1955785 0.8943588</float_array>
+          <technique_common>
+            <accessor source="#Икосфера_017-mesh-normals-array" count="20" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Икосфера_017-mesh-vertices">
+          <input semantic="POSITION" source="#Икосфера_017-mesh-positions"/>
+        </vertices>
+        <triangles material="Материал-material" count="20">
+          <input semantic="VERTEX" source="#Икосфера_017-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Икосфера_017-mesh-normals" offset="1"/>
+          <p>0 0 1 0 2 0 1 1 0 1 5 1 0 2 2 2 3 2 0 3 3 3 4 3 0 4 4 4 5 4 1 5 5 5 10 5 2 6 1 6 6 6 3 7 2 7 7 7 4 8 3 8 8 8 5 9 4 9 9 9 1 10 10 10 6 10 2 11 6 11 7 11 3 12 7 12 8 12 4 13 8 13 9 13 5 14 9 14 10 14 6 15 10 15 11 15 7 16 6 16 11 16 8 17 7 17 11 17 9 18 8 18 11 18 10 19 9 19 11 19</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Икосфера_018-mesh" name="Икосфера.018">
+      <mesh>
+        <source id="Икосфера_018-mesh-positions">
+          <float_array id="Икосфера_018-mesh-positions-array" count="36">0.2023083 0.3142048 -0.7128133 0.7722625 -0.2842182 -0.2901357 0.01598292 -0.7368561 -0.2604813 -0.7370677 0 -0.447215 -0.276385 0.6700806 -0.447215 0.7236 0.52572 -0.447215 0.276385 -0.7092797 0.447215 -0.5306378 -0.4757725 0.447215 -0.4631757 0.52572 0.218426 0.5071197 0.6161807 0.447215 0.8066523 0 0.447215 0.09214752 0 0.768639</float_array>
+          <technique_common>
+            <accessor source="#Икосфера_018-mesh-positions-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Икосфера_018-mesh-normals">
+          <float_array id="Икосфера_018-mesh-normals-array" count="60">0.2155749 -0.4180046 -0.8824962 0.4932529 -0.1369657 -0.8590354 -0.1355266 -0.3712896 -0.9185732 -0.3353862 0.2305791 -0.9134273 0.09762656 0.6762588 -0.7301665 0.9967793 0.04733359 -0.06473463 0.5031903 -0.8507023 -0.1520037 -0.6494542 -0.7232355 -0.2348185 -0.8192437 0.5632328 -0.1077434 0.1425759 0.9876223 -0.06537806 0.7863382 -0.5878773 0.1899278 -0.2752699 -0.9513587 0.1383586 -0.9488147 0.1297006 0.287973 -0.1321237 0.9757457 0.1745381 0.8861355 0.4307608 0.1709066 0.3922212 -0.29323 0.8718823 -0.1262955 -0.4364896 0.8908009 -0.5743331 0.2188911 0.7888144 -0.2384949 0.5705555 0.7858669 0.4023324 0.1955785 0.8943588</float_array>
+          <technique_common>
+            <accessor source="#Икосфера_018-mesh-normals-array" count="20" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Икосфера_018-mesh-vertices">
+          <input semantic="POSITION" source="#Икосфера_018-mesh-positions"/>
+        </vertices>
+        <triangles material="Материал-material" count="20">
+          <input semantic="VERTEX" source="#Икосфера_018-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Икосфера_018-mesh-normals" offset="1"/>
+          <p>0 0 1 0 2 0 1 1 0 1 5 1 0 2 2 2 3 2 0 3 3 3 4 3 0 4 4 4 5 4 1 5 5 5 10 5 2 6 1 6 6 6 3 7 2 7 7 7 4 8 3 8 8 8 5 9 4 9 9 9 1 10 10 10 6 10 2 11 6 11 7 11 3 12 7 12 8 12 4 13 8 13 9 13 5 14 9 14 10 14 6 15 10 15 11 15 7 16 6 16 11 16 8 17 7 17 11 17 9 18 8 18 11 18 10 19 9 19 11 19</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Икосфера_019-mesh" name="Икосфера.019">
+      <mesh>
+        <source id="Икосфера_019-mesh-positions">
+          <float_array id="Икосфера_019-mesh-positions-array" count="36">0.2023083 0.3142048 -0.7128133 0.7722625 -0.2842182 -0.2901357 0.01598292 -0.7368561 -0.2604813 -0.7370677 0 -0.447215 -0.276385 0.6700806 -0.447215 0.7236 0.52572 -0.447215 0.276385 -0.7092797 0.447215 -0.5306378 -0.4757725 0.447215 -0.4631757 0.52572 0.218426 0.5071197 0.6161807 0.447215 0.8066523 0 0.447215 0.09214752 0 0.768639</float_array>
+          <technique_common>
+            <accessor source="#Икосфера_019-mesh-positions-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Икосфера_019-mesh-normals">
+          <float_array id="Икосфера_019-mesh-normals-array" count="60">0.2155749 -0.4180046 -0.8824962 0.4932529 -0.1369657 -0.8590354 -0.1355266 -0.3712896 -0.9185732 -0.3353862 0.2305791 -0.9134273 0.09762656 0.6762588 -0.7301665 0.9967793 0.04733359 -0.06473463 0.5031903 -0.8507023 -0.1520037 -0.6494542 -0.7232355 -0.2348185 -0.8192437 0.5632328 -0.1077434 0.1425759 0.9876223 -0.06537806 0.7863382 -0.5878773 0.1899278 -0.2752699 -0.9513587 0.1383586 -0.9488147 0.1297006 0.287973 -0.1321237 0.9757457 0.1745381 0.8861355 0.4307608 0.1709066 0.3922212 -0.29323 0.8718823 -0.1262955 -0.4364896 0.8908009 -0.5743331 0.2188911 0.7888144 -0.2384949 0.5705555 0.7858669 0.4023324 0.1955785 0.8943588</float_array>
+          <technique_common>
+            <accessor source="#Икосфера_019-mesh-normals-array" count="20" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Икосфера_019-mesh-vertices">
+          <input semantic="POSITION" source="#Икосфера_019-mesh-positions"/>
+        </vertices>
+        <triangles material="Материал-material" count="20">
+          <input semantic="VERTEX" source="#Икосфера_019-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Икосфера_019-mesh-normals" offset="1"/>
+          <p>0 0 1 0 2 0 1 1 0 1 5 1 0 2 2 2 3 2 0 3 3 3 4 3 0 4 4 4 5 4 1 5 5 5 10 5 2 6 1 6 6 6 3 7 2 7 7 7 4 8 3 8 8 8 5 9 4 9 9 9 1 10 10 10 6 10 2 11 6 11 7 11 3 12 7 12 8 12 4 13 8 13 9 13 5 14 9 14 10 14 6 15 10 15 11 15 7 16 6 16 11 16 8 17 7 17 11 17 9 18 8 18 11 18 10 19 9 19 11 19</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Икосфера_020-mesh" name="Икосфера.020">
+      <mesh>
+        <source id="Икосфера_020-mesh-positions">
+          <float_array id="Икосфера_020-mesh-positions-array" count="36">0.2023083 0.3142048 -0.7128133 0.7722625 -0.2842182 -0.2901357 0.01598292 -0.7368561 -0.2604813 -0.7370677 0 -0.447215 -0.276385 0.6700806 -0.447215 0.7236 0.52572 -0.447215 0.276385 -0.7092797 0.447215 -0.5306378 -0.4757725 0.447215 -0.4631757 0.52572 0.218426 0.5071197 0.6161807 0.447215 0.8066523 0 0.447215 0.09214752 0 0.768639</float_array>
+          <technique_common>
+            <accessor source="#Икосфера_020-mesh-positions-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Икосфера_020-mesh-normals">
+          <float_array id="Икосфера_020-mesh-normals-array" count="60">0.2155749 -0.4180046 -0.8824962 0.4932529 -0.1369657 -0.8590354 -0.1355266 -0.3712896 -0.9185732 -0.3353862 0.2305791 -0.9134273 0.09762656 0.6762588 -0.7301665 0.9967793 0.04733359 -0.06473463 0.5031903 -0.8507023 -0.1520037 -0.6494542 -0.7232355 -0.2348185 -0.8192437 0.5632328 -0.1077434 0.1425759 0.9876223 -0.06537806 0.7863382 -0.5878773 0.1899278 -0.2752699 -0.9513587 0.1383586 -0.9488147 0.1297006 0.287973 -0.1321237 0.9757457 0.1745381 0.8861355 0.4307608 0.1709066 0.3922212 -0.29323 0.8718823 -0.1262955 -0.4364896 0.8908009 -0.5743331 0.2188911 0.7888144 -0.2384949 0.5705555 0.7858669 0.4023324 0.1955785 0.8943588</float_array>
+          <technique_common>
+            <accessor source="#Икосфера_020-mesh-normals-array" count="20" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Икосфера_020-mesh-vertices">
+          <input semantic="POSITION" source="#Икосфера_020-mesh-positions"/>
+        </vertices>
+        <triangles material="Материал-material" count="20">
+          <input semantic="VERTEX" source="#Икосфера_020-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Икосфера_020-mesh-normals" offset="1"/>
+          <p>0 0 1 0 2 0 1 1 0 1 5 1 0 2 2 2 3 2 0 3 3 3 4 3 0 4 4 4 5 4 1 5 5 5 10 5 2 6 1 6 6 6 3 7 2 7 7 7 4 8 3 8 8 8 5 9 4 9 9 9 1 10 10 10 6 10 2 11 6 11 7 11 3 12 7 12 8 12 4 13 8 13 9 13 5 14 9 14 10 14 6 15 10 15 11 15 7 16 6 16 11 16 8 17 7 17 11 17 9 18 8 18 11 18 10 19 9 19 11 19</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Икосфера_021-mesh" name="Икосфера.021">
+      <mesh>
+        <source id="Икосфера_021-mesh-positions">
+          <float_array id="Икосфера_021-mesh-positions-array" count="36">0.2023083 0.3142048 -0.7128133 0.7722625 -0.2842182 -0.2901357 0.01598292 -0.7368561 -0.2604813 -0.7370677 0 -0.447215 -0.276385 0.6700806 -0.447215 0.7236 0.52572 -0.447215 0.276385 -0.7092797 0.447215 -0.5306378 -0.4757725 0.447215 -0.4631757 0.52572 0.218426 0.5071197 0.6161807 0.447215 0.8066523 0 0.447215 0.09214752 0 0.768639</float_array>
+          <technique_common>
+            <accessor source="#Икосфера_021-mesh-positions-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Икосфера_021-mesh-normals">
+          <float_array id="Икосфера_021-mesh-normals-array" count="60">0.2155749 -0.4180046 -0.8824962 0.4932529 -0.1369657 -0.8590354 -0.1355266 -0.3712896 -0.9185732 -0.3353862 0.2305791 -0.9134273 0.09762656 0.6762588 -0.7301665 0.9967793 0.04733359 -0.06473463 0.5031903 -0.8507023 -0.1520037 -0.6494542 -0.7232355 -0.2348185 -0.8192437 0.5632328 -0.1077434 0.1425759 0.9876223 -0.06537806 0.7863382 -0.5878773 0.1899278 -0.2752699 -0.9513587 0.1383586 -0.9488147 0.1297006 0.287973 -0.1321237 0.9757457 0.1745381 0.8861355 0.4307608 0.1709066 0.3922212 -0.29323 0.8718823 -0.1262955 -0.4364896 0.8908009 -0.5743331 0.2188911 0.7888144 -0.2384949 0.5705555 0.7858669 0.4023324 0.1955785 0.8943588</float_array>
+          <technique_common>
+            <accessor source="#Икосфера_021-mesh-normals-array" count="20" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Икосфера_021-mesh-vertices">
+          <input semantic="POSITION" source="#Икосфера_021-mesh-positions"/>
+        </vertices>
+        <triangles material="Материал-material" count="20">
+          <input semantic="VERTEX" source="#Икосфера_021-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Икосфера_021-mesh-normals" offset="1"/>
+          <p>0 0 1 0 2 0 1 1 0 1 5 1 0 2 2 2 3 2 0 3 3 3 4 3 0 4 4 4 5 4 1 5 5 5 10 5 2 6 1 6 6 6 3 7 2 7 7 7 4 8 3 8 8 8 5 9 4 9 9 9 1 10 10 10 6 10 2 11 6 11 7 11 3 12 7 12 8 12 4 13 8 13 9 13 5 14 9 14 10 14 6 15 10 15 11 15 7 16 6 16 11 16 8 17 7 17 11 17 9 18 8 18 11 18 10 19 9 19 11 19</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Икосфера_022-mesh" name="Икосфера.022">
+      <mesh>
+        <source id="Икосфера_022-mesh-positions">
+          <float_array id="Икосфера_022-mesh-positions-array" count="36">0.2023083 0.3142048 -0.7128133 0.7722625 -0.2842182 -0.2901357 0.01598292 -0.7368561 -0.2604813 -0.7370677 0 -0.447215 -0.276385 0.6700806 -0.447215 0.7236 0.52572 -0.447215 0.276385 -0.7092797 0.447215 -0.5306378 -0.4757725 0.447215 -0.4631757 0.52572 0.218426 0.5071197 0.6161807 0.447215 0.8066523 0 0.447215 0.09214752 0 0.768639</float_array>
+          <technique_common>
+            <accessor source="#Икосфера_022-mesh-positions-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Икосфера_022-mesh-normals">
+          <float_array id="Икосфера_022-mesh-normals-array" count="60">0.2155749 -0.4180046 -0.8824962 0.4932529 -0.1369657 -0.8590354 -0.1355266 -0.3712896 -0.9185732 -0.3353862 0.2305791 -0.9134273 0.09762656 0.6762588 -0.7301665 0.9967793 0.04733359 -0.06473463 0.5031903 -0.8507023 -0.1520037 -0.6494542 -0.7232355 -0.2348185 -0.8192437 0.5632328 -0.1077434 0.1425759 0.9876223 -0.06537806 0.7863382 -0.5878773 0.1899278 -0.2752699 -0.9513587 0.1383586 -0.9488147 0.1297006 0.287973 -0.1321237 0.9757457 0.1745381 0.8861355 0.4307608 0.1709066 0.3922212 -0.29323 0.8718823 -0.1262955 -0.4364896 0.8908009 -0.5743331 0.2188911 0.7888144 -0.2384949 0.5705555 0.7858669 0.4023324 0.1955785 0.8943588</float_array>
+          <technique_common>
+            <accessor source="#Икосфера_022-mesh-normals-array" count="20" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Икосфера_022-mesh-vertices">
+          <input semantic="POSITION" source="#Икосфера_022-mesh-positions"/>
+        </vertices>
+        <triangles material="Материал-material" count="20">
+          <input semantic="VERTEX" source="#Икосфера_022-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Икосфера_022-mesh-normals" offset="1"/>
+          <p>0 0 1 0 2 0 1 1 0 1 5 1 0 2 2 2 3 2 0 3 3 3 4 3 0 4 4 4 5 4 1 5 5 5 10 5 2 6 1 6 6 6 3 7 2 7 7 7 4 8 3 8 8 8 5 9 4 9 9 9 1 10 10 10 6 10 2 11 6 11 7 11 3 12 7 12 8 12 4 13 8 13 9 13 5 14 9 14 10 14 6 15 10 15 11 15 7 16 6 16 11 16 8 17 7 17 11 17 9 18 8 18 11 18 10 19 9 19 11 19</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Икосфера_023-mesh" name="Икосфера.023">
+      <mesh>
+        <source id="Икосфера_023-mesh-positions">
+          <float_array id="Икосфера_023-mesh-positions-array" count="36">0.2023083 0.3142048 -0.7128133 0.7722625 -0.2842182 -0.2901357 0.01598292 -0.7368561 -0.2604813 -0.7370677 0 -0.447215 -0.276385 0.6700806 -0.447215 0.7236 0.52572 -0.447215 0.276385 -0.7092797 0.447215 -0.5306378 -0.4757725 0.447215 -0.4631757 0.52572 0.218426 0.5071197 0.6161807 0.447215 0.8066523 0 0.447215 0.09214752 0 0.768639</float_array>
+          <technique_common>
+            <accessor source="#Икосфера_023-mesh-positions-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Икосфера_023-mesh-normals">
+          <float_array id="Икосфера_023-mesh-normals-array" count="60">0.2155749 -0.4180046 -0.8824962 0.4932529 -0.1369657 -0.8590354 -0.1355266 -0.3712896 -0.9185732 -0.3353862 0.2305791 -0.9134273 0.09762656 0.6762588 -0.7301665 0.9967793 0.04733359 -0.06473463 0.5031903 -0.8507023 -0.1520037 -0.6494542 -0.7232355 -0.2348185 -0.8192437 0.5632328 -0.1077434 0.1425759 0.9876223 -0.06537806 0.7863382 -0.5878773 0.1899278 -0.2752699 -0.9513587 0.1383586 -0.9488147 0.1297006 0.287973 -0.1321237 0.9757457 0.1745381 0.8861355 0.4307608 0.1709066 0.3922212 -0.29323 0.8718823 -0.1262955 -0.4364896 0.8908009 -0.5743331 0.2188911 0.7888144 -0.2384949 0.5705555 0.7858669 0.4023324 0.1955785 0.8943588</float_array>
+          <technique_common>
+            <accessor source="#Икосфера_023-mesh-normals-array" count="20" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Икосфера_023-mesh-vertices">
+          <input semantic="POSITION" source="#Икосфера_023-mesh-positions"/>
+        </vertices>
+        <triangles material="Материал-material" count="20">
+          <input semantic="VERTEX" source="#Икосфера_023-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Икосфера_023-mesh-normals" offset="1"/>
+          <p>0 0 1 0 2 0 1 1 0 1 5 1 0 2 2 2 3 2 0 3 3 3 4 3 0 4 4 4 5 4 1 5 5 5 10 5 2 6 1 6 6 6 3 7 2 7 7 7 4 8 3 8 8 8 5 9 4 9 9 9 1 10 10 10 6 10 2 11 6 11 7 11 3 12 7 12 8 12 4 13 8 13 9 13 5 14 9 14 10 14 6 15 10 15 11 15 7 16 6 16 11 16 8 17 7 17 11 17 9 18 8 18 11 18 10 19 9 19 11 19</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Икосфера_024-mesh" name="Икосфера.024">
+      <mesh>
+        <source id="Икосфера_024-mesh-positions">
+          <float_array id="Икосфера_024-mesh-positions-array" count="36">0.2023083 0.3142048 -0.7128133 0.7722625 -0.2842182 -0.2901357 0.01598292 -0.7368561 -0.2604813 -0.7370677 0 -0.447215 -0.276385 0.6700806 -0.447215 0.7236 0.52572 -0.447215 0.276385 -0.7092797 0.447215 -0.5306378 -0.4757725 0.447215 -0.4631757 0.52572 0.218426 0.5071197 0.6161807 0.447215 0.8066523 0 0.447215 0.09214752 0 0.768639</float_array>
+          <technique_common>
+            <accessor source="#Икосфера_024-mesh-positions-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Икосфера_024-mesh-normals">
+          <float_array id="Икосфера_024-mesh-normals-array" count="60">0.2155749 -0.4180046 -0.8824962 0.4932529 -0.1369657 -0.8590354 -0.1355266 -0.3712896 -0.9185732 -0.3353862 0.2305791 -0.9134273 0.09762656 0.6762588 -0.7301665 0.9967793 0.04733359 -0.06473463 0.5031903 -0.8507023 -0.1520037 -0.6494542 -0.7232355 -0.2348185 -0.8192437 0.5632328 -0.1077434 0.1425759 0.9876223 -0.06537806 0.7863382 -0.5878773 0.1899278 -0.2752699 -0.9513587 0.1383586 -0.9488147 0.1297006 0.287973 -0.1321237 0.9757457 0.1745381 0.8861355 0.4307608 0.1709066 0.3922212 -0.29323 0.8718823 -0.1262955 -0.4364896 0.8908009 -0.5743331 0.2188911 0.7888144 -0.2384949 0.5705555 0.7858669 0.4023324 0.1955785 0.8943588</float_array>
+          <technique_common>
+            <accessor source="#Икосфера_024-mesh-normals-array" count="20" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Икосфера_024-mesh-vertices">
+          <input semantic="POSITION" source="#Икосфера_024-mesh-positions"/>
+        </vertices>
+        <triangles material="Материал-material" count="20">
+          <input semantic="VERTEX" source="#Икосфера_024-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Икосфера_024-mesh-normals" offset="1"/>
+          <p>0 0 1 0 2 0 1 1 0 1 5 1 0 2 2 2 3 2 0 3 3 3 4 3 0 4 4 4 5 4 1 5 5 5 10 5 2 6 1 6 6 6 3 7 2 7 7 7 4 8 3 8 8 8 5 9 4 9 9 9 1 10 10 10 6 10 2 11 6 11 7 11 3 12 7 12 8 12 4 13 8 13 9 13 5 14 9 14 10 14 6 15 10 15 11 15 7 16 6 16 11 16 8 17 7 17 11 17 9 18 8 18 11 18 10 19 9 19 11 19</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Икосфера_025-mesh" name="Икосфера.025">
+      <mesh>
+        <source id="Икосфера_025-mesh-positions">
+          <float_array id="Икосфера_025-mesh-positions-array" count="36">0.2023083 0.3142048 -0.7128133 0.7722625 -0.2842182 -0.2901357 0.01598292 -0.7368561 -0.2604813 -0.7370677 0 -0.447215 -0.276385 0.6700806 -0.447215 0.7236 0.52572 -0.447215 0.276385 -0.7092797 0.447215 -0.5306378 -0.4757725 0.447215 -0.4631757 0.52572 0.218426 0.5071197 0.6161807 0.447215 0.8066523 0 0.447215 0.09214752 0 0.768639</float_array>
+          <technique_common>
+            <accessor source="#Икосфера_025-mesh-positions-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Икосфера_025-mesh-normals">
+          <float_array id="Икосфера_025-mesh-normals-array" count="60">0.2155749 -0.4180046 -0.8824962 0.4932529 -0.1369657 -0.8590354 -0.1355266 -0.3712896 -0.9185732 -0.3353862 0.2305791 -0.9134273 0.09762656 0.6762588 -0.7301665 0.9967793 0.04733359 -0.06473463 0.5031903 -0.8507023 -0.1520037 -0.6494542 -0.7232355 -0.2348185 -0.8192437 0.5632328 -0.1077434 0.1425759 0.9876223 -0.06537806 0.7863382 -0.5878773 0.1899278 -0.2752699 -0.9513587 0.1383586 -0.9488147 0.1297006 0.287973 -0.1321237 0.9757457 0.1745381 0.8861355 0.4307608 0.1709066 0.3922212 -0.29323 0.8718823 -0.1262955 -0.4364896 0.8908009 -0.5743331 0.2188911 0.7888144 -0.2384949 0.5705555 0.7858669 0.4023324 0.1955785 0.8943588</float_array>
+          <technique_common>
+            <accessor source="#Икосфера_025-mesh-normals-array" count="20" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Икосфера_025-mesh-vertices">
+          <input semantic="POSITION" source="#Икосфера_025-mesh-positions"/>
+        </vertices>
+        <triangles material="Материал-material" count="20">
+          <input semantic="VERTEX" source="#Икосфера_025-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Икосфера_025-mesh-normals" offset="1"/>
+          <p>0 0 1 0 2 0 1 1 0 1 5 1 0 2 2 2 3 2 0 3 3 3 4 3 0 4 4 4 5 4 1 5 5 5 10 5 2 6 1 6 6 6 3 7 2 7 7 7 4 8 3 8 8 8 5 9 4 9 9 9 1 10 10 10 6 10 2 11 6 11 7 11 3 12 7 12 8 12 4 13 8 13 9 13 5 14 9 14 10 14 6 15 10 15 11 15 7 16 6 16 11 16 8 17 7 17 11 17 9 18 8 18 11 18 10 19 9 19 11 19</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Икосфера_026-mesh" name="Икосфера.026">
+      <mesh>
+        <source id="Икосфера_026-mesh-positions">
+          <float_array id="Икосфера_026-mesh-positions-array" count="36">0.2023083 0.3142048 -0.7128133 0.7722625 -0.2842182 -0.2901357 0.01598292 -0.7368561 -0.2604813 -0.7370677 0 -0.447215 -0.276385 0.6700806 -0.447215 0.7236 0.52572 -0.447215 0.276385 -0.7092797 0.447215 -0.5306378 -0.4757725 0.447215 -0.4631757 0.52572 0.218426 0.5071197 0.6161807 0.447215 0.8066523 0 0.447215 0.09214752 0 0.768639</float_array>
+          <technique_common>
+            <accessor source="#Икосфера_026-mesh-positions-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Икосфера_026-mesh-normals">
+          <float_array id="Икосфера_026-mesh-normals-array" count="60">0.2155749 -0.4180046 -0.8824962 0.4932529 -0.1369657 -0.8590354 -0.1355266 -0.3712896 -0.9185732 -0.3353862 0.2305791 -0.9134273 0.09762656 0.6762588 -0.7301665 0.9967793 0.04733359 -0.06473463 0.5031903 -0.8507023 -0.1520037 -0.6494542 -0.7232355 -0.2348185 -0.8192437 0.5632328 -0.1077434 0.1425759 0.9876223 -0.06537806 0.7863382 -0.5878773 0.1899278 -0.2752699 -0.9513587 0.1383586 -0.9488147 0.1297006 0.287973 -0.1321237 0.9757457 0.1745381 0.8861355 0.4307608 0.1709066 0.3922212 -0.29323 0.8718823 -0.1262955 -0.4364896 0.8908009 -0.5743331 0.2188911 0.7888144 -0.2384949 0.5705555 0.7858669 0.4023324 0.1955785 0.8943588</float_array>
+          <technique_common>
+            <accessor source="#Икосфера_026-mesh-normals-array" count="20" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Икосфера_026-mesh-vertices">
+          <input semantic="POSITION" source="#Икосфера_026-mesh-positions"/>
+        </vertices>
+        <triangles material="Материал-material" count="20">
+          <input semantic="VERTEX" source="#Икосфера_026-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Икосфера_026-mesh-normals" offset="1"/>
+          <p>0 0 1 0 2 0 1 1 0 1 5 1 0 2 2 2 3 2 0 3 3 3 4 3 0 4 4 4 5 4 1 5 5 5 10 5 2 6 1 6 6 6 3 7 2 7 7 7 4 8 3 8 8 8 5 9 4 9 9 9 1 10 10 10 6 10 2 11 6 11 7 11 3 12 7 12 8 12 4 13 8 13 9 13 5 14 9 14 10 14 6 15 10 15 11 15 7 16 6 16 11 16 8 17 7 17 11 17 9 18 8 18 11 18 10 19 9 19 11 19</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Икосфера_027-mesh" name="Икосфера.027">
+      <mesh>
+        <source id="Икосфера_027-mesh-positions">
+          <float_array id="Икосфера_027-mesh-positions-array" count="36">0.2023083 0.3142048 -0.7128133 0.7722625 -0.2842182 -0.2901357 0.01598292 -0.7368561 -0.2604813 -0.7370677 0 -0.447215 -0.276385 0.6700806 -0.447215 0.7236 0.52572 -0.447215 0.276385 -0.7092797 0.447215 -0.5306378 -0.4757725 0.447215 -0.4631757 0.52572 0.218426 0.5071197 0.6161807 0.447215 0.8066523 0 0.447215 0.09214752 0 0.768639</float_array>
+          <technique_common>
+            <accessor source="#Икосфера_027-mesh-positions-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Икосфера_027-mesh-normals">
+          <float_array id="Икосфера_027-mesh-normals-array" count="60">0.2155749 -0.4180046 -0.8824962 0.4932529 -0.1369657 -0.8590354 -0.1355266 -0.3712896 -0.9185732 -0.3353862 0.2305791 -0.9134273 0.09762656 0.6762588 -0.7301665 0.9967793 0.04733359 -0.06473463 0.5031903 -0.8507023 -0.1520037 -0.6494542 -0.7232355 -0.2348185 -0.8192437 0.5632328 -0.1077434 0.1425759 0.9876223 -0.06537806 0.7863382 -0.5878773 0.1899278 -0.2752699 -0.9513587 0.1383586 -0.9488147 0.1297006 0.287973 -0.1321237 0.9757457 0.1745381 0.8861355 0.4307608 0.1709066 0.3922212 -0.29323 0.8718823 -0.1262955 -0.4364896 0.8908009 -0.5743331 0.2188911 0.7888144 -0.2384949 0.5705555 0.7858669 0.4023324 0.1955785 0.8943588</float_array>
+          <technique_common>
+            <accessor source="#Икосфера_027-mesh-normals-array" count="20" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Икосфера_027-mesh-vertices">
+          <input semantic="POSITION" source="#Икосфера_027-mesh-positions"/>
+        </vertices>
+        <triangles material="Материал-material" count="20">
+          <input semantic="VERTEX" source="#Икосфера_027-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Икосфера_027-mesh-normals" offset="1"/>
+          <p>0 0 1 0 2 0 1 1 0 1 5 1 0 2 2 2 3 2 0 3 3 3 4 3 0 4 4 4 5 4 1 5 5 5 10 5 2 6 1 6 6 6 3 7 2 7 7 7 4 8 3 8 8 8 5 9 4 9 9 9 1 10 10 10 6 10 2 11 6 11 7 11 3 12 7 12 8 12 4 13 8 13 9 13 5 14 9 14 10 14 6 15 10 15 11 15 7 16 6 16 11 16 8 17 7 17 11 17 9 18 8 18 11 18 10 19 9 19 11 19</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Икосфера_028-mesh" name="Икосфера.028">
+      <mesh>
+        <source id="Икосфера_028-mesh-positions">
+          <float_array id="Икосфера_028-mesh-positions-array" count="36">0.2023083 0.3142048 -0.7128133 0.7722625 -0.2842182 -0.2901357 0.01598292 -0.7368561 -0.2604813 -0.7370677 0 -0.447215 -0.276385 0.6700806 -0.447215 0.7236 0.52572 -0.447215 0.276385 -0.7092797 0.447215 -0.5306378 -0.4757725 0.447215 -0.4631757 0.52572 0.218426 0.5071197 0.6161807 0.447215 0.8066523 0 0.447215 0.09214752 0 0.768639</float_array>
+          <technique_common>
+            <accessor source="#Икосфера_028-mesh-positions-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Икосфера_028-mesh-normals">
+          <float_array id="Икосфера_028-mesh-normals-array" count="60">0.2155749 -0.4180046 -0.8824962 0.4932529 -0.1369657 -0.8590354 -0.1355266 -0.3712896 -0.9185732 -0.3353862 0.2305791 -0.9134273 0.09762656 0.6762588 -0.7301665 0.9967793 0.04733359 -0.06473463 0.5031903 -0.8507023 -0.1520037 -0.6494542 -0.7232355 -0.2348185 -0.8192437 0.5632328 -0.1077434 0.1425759 0.9876223 -0.06537806 0.7863382 -0.5878773 0.1899278 -0.2752699 -0.9513587 0.1383586 -0.9488147 0.1297006 0.287973 -0.1321237 0.9757457 0.1745381 0.8861355 0.4307608 0.1709066 0.3922212 -0.29323 0.8718823 -0.1262955 -0.4364896 0.8908009 -0.5743331 0.2188911 0.7888144 -0.2384949 0.5705555 0.7858669 0.4023324 0.1955785 0.8943588</float_array>
+          <technique_common>
+            <accessor source="#Икосфера_028-mesh-normals-array" count="20" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Икосфера_028-mesh-vertices">
+          <input semantic="POSITION" source="#Икосфера_028-mesh-positions"/>
+        </vertices>
+        <triangles material="Материал-material" count="20">
+          <input semantic="VERTEX" source="#Икосфера_028-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Икосфера_028-mesh-normals" offset="1"/>
+          <p>0 0 1 0 2 0 1 1 0 1 5 1 0 2 2 2 3 2 0 3 3 3 4 3 0 4 4 4 5 4 1 5 5 5 10 5 2 6 1 6 6 6 3 7 2 7 7 7 4 8 3 8 8 8 5 9 4 9 9 9 1 10 10 10 6 10 2 11 6 11 7 11 3 12 7 12 8 12 4 13 8 13 9 13 5 14 9 14 10 14 6 15 10 15 11 15 7 16 6 16 11 16 8 17 7 17 11 17 9 18 8 18 11 18 10 19 9 19 11 19</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Икосфера_029-mesh" name="Икосфера.029">
+      <mesh>
+        <source id="Икосфера_029-mesh-positions">
+          <float_array id="Икосфера_029-mesh-positions-array" count="36">0.2023083 0.3142048 -0.7128133 0.7722625 -0.2842182 -0.2901357 0.01598292 -0.7368561 -0.2604813 -0.7370677 0 -0.447215 -0.276385 0.6700806 -0.447215 0.7236 0.52572 -0.447215 0.276385 -0.7092797 0.447215 -0.5306378 -0.4757725 0.447215 -0.4631757 0.52572 0.218426 0.5071197 0.6161807 0.447215 0.8066523 0 0.447215 0.09214752 0 0.768639</float_array>
+          <technique_common>
+            <accessor source="#Икосфера_029-mesh-positions-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Икосфера_029-mesh-normals">
+          <float_array id="Икосфера_029-mesh-normals-array" count="60">0.2155749 -0.4180046 -0.8824962 0.4932529 -0.1369657 -0.8590354 -0.1355266 -0.3712896 -0.9185732 -0.3353862 0.2305791 -0.9134273 0.09762656 0.6762588 -0.7301665 0.9967793 0.04733359 -0.06473463 0.5031903 -0.8507023 -0.1520037 -0.6494542 -0.7232355 -0.2348185 -0.8192437 0.5632328 -0.1077434 0.1425759 0.9876223 -0.06537806 0.7863382 -0.5878773 0.1899278 -0.2752699 -0.9513587 0.1383586 -0.9488147 0.1297006 0.287973 -0.1321237 0.9757457 0.1745381 0.8861355 0.4307608 0.1709066 0.3922212 -0.29323 0.8718823 -0.1262955 -0.4364896 0.8908009 -0.5743331 0.2188911 0.7888144 -0.2384949 0.5705555 0.7858669 0.4023324 0.1955785 0.8943588</float_array>
+          <technique_common>
+            <accessor source="#Икосфера_029-mesh-normals-array" count="20" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Икосфера_029-mesh-vertices">
+          <input semantic="POSITION" source="#Икосфера_029-mesh-positions"/>
+        </vertices>
+        <triangles material="Материал-material" count="20">
+          <input semantic="VERTEX" source="#Икосфера_029-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Икосфера_029-mesh-normals" offset="1"/>
+          <p>0 0 1 0 2 0 1 1 0 1 5 1 0 2 2 2 3 2 0 3 3 3 4 3 0 4 4 4 5 4 1 5 5 5 10 5 2 6 1 6 6 6 3 7 2 7 7 7 4 8 3 8 8 8 5 9 4 9 9 9 1 10 10 10 6 10 2 11 6 11 7 11 3 12 7 12 8 12 4 13 8 13 9 13 5 14 9 14 10 14 6 15 10 15 11 15 7 16 6 16 11 16 8 17 7 17 11 17 9 18 8 18 11 18 10 19 9 19 11 19</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Цилиндр_002-mesh" name="Цилиндр.002">
+      <mesh>
+        <source id="Цилиндр_002-mesh-positions">
+          <float_array id="Цилиндр_002-mesh-positions-array" count="144">0.06787896 0.854096 -1.033109 -0.04987215 1.171401 1.093374 0.7432286 0.3508161 -1.106965 0.9319486 0.5433092 1.150796 0.6753496 -0.5032799 -1.073856 0.8920021 -0.6280917 1.12637 -0.06787902 -0.854096 -0.9668912 -0.1297652 -1.171401 1.044522 -0.7432286 -0.350816 -0.8930351 -1.111586 -0.543309 0.9871 -0.6753497 0.5032798 -0.9261438 -1.071639 0.6280916 1.011526 0.469985 1 -0.3152047 0.469985 1 0.351462 1.33601 0.5 0.351462 1.33601 0.5 -0.3152047 1.33601 -0.5000001 0.351462 1.33601 -0.5000001 -0.3152047 0.4699849 -1 0.351462 0.4699849 -1 -0.3152047 -0.3960404 -0.4999999 0.351462 -0.3960404 -0.4999999 -0.3152047 -0.3960404 0.4999999 0.351462 -0.3960404 0.4999999 -0.3152047 4.351013 2.408401 2.589112 -4.624048 1.934604 0.5259711 3.349754 1.204201 3.357714 -5.428332 0.967302 1.143369 3.349754 -1.204201 3.357714 -5.428332 -0.9673022 1.143369 4.351013 -2.408401 2.589111 -4.624048 -1.934604 0.525971 5.352272 -1.2042 1.820509 -3.819764 -0.9673018 -0.09142649 5.352272 1.2042 1.820509 -3.819764 0.9673018 -0.09142649 1.179006 2.148877 2.039818 -1.812681 2.148877 1.352104 -2.706046 1.074439 2.037884 0.2856408 1.074439 2.725597 -2.706046 -1.074439 2.037884 0.2856408 -1.074439 2.725597 -1.81268 -2.148877 1.352104 1.179006 -2.148877 2.039818 -0.9193153 -1.074438 0.666325 2.072371 -1.074438 1.354038 -0.9193153 1.074438 0.666325 2.072371 1.074438 1.354038</float_array>
+          <technique_common>
+            <accessor source="#Цилиндр_002-mesh-positions-array" count="48" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Цилиндр_002-mesh-normals">
+          <float_array id="Цилиндр_002-mesh-normals-array" count="255">0.4897339 0.8482441 0.2016003 0.8924559 0 0.4511347 0.4949412 -0.8572637 0.1418876 -0.4198234 -0.7271552 -0.5431333 -0.07010638 -0.01840633 0.9973697 -0.4380295 0.7586895 -0.4822037 -0.664129 0 -0.747618 -0.129369 -0.02814179 -0.9911971 -0.9057502 0.08805453 0.4145637 -1 0 0 -0.3972948 0.8985488 0.1864591 -0.5000001 0.8660254 0 -0.5813761 -0.8010587 0.1425017 -0.5000001 -0.8660254 0 0.3258696 -0.8289715 -0.4545495 0.4999999 -0.8660255 0 0.751578 -0.08508872 -0.6541333 1 0 0 0.5069186 0.7440915 -0.4351568 0.5 0.8660255 0 -0.2571812 0.662736 0.7033056 -0.3121691 0 0.9500266 -0.2571812 -0.6627361 0.7033056 0.1747093 -0.6288469 -0.7576466 -0.6089158 0 -0.7932349 0.1747092 0.6288469 -0.7576465 0.2527694 0 -0.9675266 0.6089157 0 0.793235 0.1408041 0 -0.9900375 0.2240318 0 -0.9745818 0.09098112 0.5884374 -0.8034076 0.1742301 0.6286325 -0.7579348 0.09098118 -0.5884374 -0.8034077 0.1742301 -0.6286324 -0.7579348 -0.1821403 -0.6321474 0.7531365 -0.17423 -0.6286327 0.7579346 -0.2020421 0 0.9793769 -0.2240318 0 0.9745818 -0.1821404 0.6321473 0.7531366 -0.1742301 0.6286326 0.7579346 0.5234175 0.8341091 0.1740576 0.8698024 -0.03991627 0.491783 0.4513977 -0.8751562 0.1741888 -0.4324088 -0.7249503 -0.536162 -0.07010626 -0.01840645 0.9973697 -0.07010632 -0.01840656 0.9973697 -0.07010626 -0.01840621 0.9973697 -0.3666315 0.7684994 -0.5243949 -0.6945524 0.03866529 -0.7184024 -0.1293689 -0.02814209 -0.9911971 -0.1293689 -0.02814191 -0.9911971 -0.1293689 -0.02814179 -0.9911971 -0.8571721 0 0.51503 -1 0 0 -0.4973154 0.8613753 0.1034892 -0.5000001 0.8660254 0 -0.4884471 -0.846015 0.2137241 -0.5000001 -0.8660254 0 0.4590553 -0.7951072 -0.3963242 0.4999999 -0.8660255 0 0.8005036 0 -0.5993279 0.4404082 0.7628096 -0.4734576 0.5 0.8660254 0 -0.312169 0 0.9500266 -0.2571813 -0.6627361 0.7033055 0.1747093 -0.6288469 -0.7576466 -0.6089158 0 -0.7932349 -0.6089159 0 -0.7932348 -0.6089158 0 -0.7932349 0.1747093 0.6288469 -0.7576465 0.2527694 0 -0.9675266 0.6089158 0 0.793235 0.6089158 0 0.7932349 0.6089158 0 0.7932349 0.1408041 0 -0.9900375 0.2240318 0 -0.9745818 0.0909813 0.5884374 -0.8034077 0.17423 0.6286325 -0.7579348 0.09098118 -0.5884372 -0.8034078 0.17423 -0.6286325 -0.7579348 -0.1821403 -0.6321474 0.7531365 -0.17423 -0.6286327 0.7579346 -0.2020422 0 0.9793769 -0.1821404 0.6321472 0.7531366 -0.17423 0.6286326 0.7579347</float_array>
+          <technique_common>
+            <accessor source="#Цилиндр_002-mesh-normals-array" count="85" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Цилиндр_002-mesh-vertices">
+          <input semantic="POSITION" source="#Цилиндр_002-mesh-positions"/>
+        </vertices>
+        <triangles material="Материал_001-material" count="88">
+          <input semantic="VERTEX" source="#Цилиндр_002-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Цилиндр_002-mesh-normals" offset="1"/>
+          <p>13 0 3 0 14 0 3 1 16 1 14 1 5 2 18 2 16 2 7 3 20 3 18 3 11 4 9 4 3 4 22 5 1 5 13 5 9 6 22 6 20 6 2 7 8 7 10 7 8 8 23 8 10 8 20 9 23 9 21 9 23 10 0 10 10 10 22 11 12 11 23 11 6 12 21 12 8 12 18 13 21 13 19 13 4 14 19 14 6 14 16 15 19 15 17 15 2 16 17 16 4 16 14 17 17 17 15 17 12 18 2 18 0 18 12 19 14 19 15 19 25 20 38 20 37 20 27 21 40 21 38 21 40 22 31 22 42 22 42 23 33 23 44 23 35 24 33 24 27 24 35 25 37 25 46 25 33 26 46 26 44 26 26 27 32 27 34 27 32 28 47 28 34 28 44 29 47 29 45 29 47 30 24 30 34 30 46 31 36 31 47 31 30 32 45 32 32 32 43 33 44 33 45 33 28 34 43 34 30 34 41 35 42 35 43 35 26 36 41 36 28 36 38 37 41 37 39 37 36 38 26 38 24 38 37 39 39 39 36 39 13 40 1 40 3 40 3 41 5 41 16 41 5 42 7 42 18 42 7 43 9 43 20 43 5 44 3 44 9 44 1 45 11 45 3 45 9 46 7 46 5 46 22 47 11 47 1 47 9 48 11 48 22 48 10 49 0 49 2 49 2 50 4 50 8 50 6 51 8 51 4 51 8 52 21 52 23 52 20 53 22 53 23 53 23 54 12 54 0 54 22 55 13 55 12 55 6 56 19 56 21 56 18 57 20 57 21 57 4 58 17 58 19 58 16 59 18 59 19 59 2 60 15 60 17 60 14 17 16 17 17 17 12 61 15 61 2 61 12 62 13 62 14 62 25 20 27 20 38 20 27 63 29 63 40 63 40 64 29 64 31 64 42 65 31 65 33 65 29 66 27 66 33 66 25 67 35 67 27 67 33 68 31 68 29 68 35 69 25 69 37 69 33 70 35 70 46 70 34 71 24 71 26 71 26 72 28 72 32 72 30 73 32 73 28 73 32 74 45 74 47 74 44 75 46 75 47 75 47 76 36 76 24 76 46 77 37 77 36 77 30 78 43 78 45 78 43 79 42 79 44 79 28 80 41 80 43 80 41 81 40 81 42 81 26 82 39 82 41 82 38 37 40 37 41 37 36 83 39 83 26 83 37 84 38 84 39 84</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Икосфера_030-mesh" name="Икосфера.030">
+      <mesh>
+        <source id="Икосфера_030-mesh-positions">
+          <float_array id="Икосфера_030-mesh-positions-array" count="36">0.2023083 0.3142048 -0.7128133 0.7722625 -0.2842182 -0.2901357 0.01598292 -0.7368561 -0.2604813 -0.7370677 0 -0.447215 -0.276385 0.6700806 -0.447215 0.7236 0.52572 -0.447215 0.276385 -0.7092797 0.447215 -0.5306378 -0.4757725 0.447215 -0.4631757 0.52572 0.218426 0.5071197 0.6161807 0.447215 0.8066523 0 0.447215 0.09214752 0 0.768639</float_array>
+          <technique_common>
+            <accessor source="#Икосфера_030-mesh-positions-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Икосфера_030-mesh-normals">
+          <float_array id="Икосфера_030-mesh-normals-array" count="60">0.2155749 -0.4180046 -0.8824962 0.4932529 -0.1369657 -0.8590354 -0.1355266 -0.3712896 -0.9185732 -0.3353862 0.2305791 -0.9134273 0.09762656 0.6762588 -0.7301665 0.9967793 0.04733359 -0.06473463 0.5031903 -0.8507023 -0.1520037 -0.6494542 -0.7232355 -0.2348185 -0.8192437 0.5632328 -0.1077434 0.1425759 0.9876223 -0.06537806 0.7863382 -0.5878773 0.1899278 -0.2752699 -0.9513587 0.1383586 -0.9488147 0.1297006 0.287973 -0.1321237 0.9757457 0.1745381 0.8861355 0.4307608 0.1709066 0.3922212 -0.29323 0.8718823 -0.1262955 -0.4364896 0.8908009 -0.5743331 0.2188911 0.7888144 -0.2384949 0.5705555 0.7858669 0.4023324 0.1955785 0.8943588</float_array>
+          <technique_common>
+            <accessor source="#Икосфера_030-mesh-normals-array" count="20" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Икосфера_030-mesh-vertices">
+          <input semantic="POSITION" source="#Икосфера_030-mesh-positions"/>
+        </vertices>
+        <triangles material="Материал-material" count="20">
+          <input semantic="VERTEX" source="#Икосфера_030-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Икосфера_030-mesh-normals" offset="1"/>
+          <p>0 0 1 0 2 0 1 1 0 1 5 1 0 2 2 2 3 2 0 3 3 3 4 3 0 4 4 4 5 4 1 5 5 5 10 5 2 6 1 6 6 6 3 7 2 7 7 7 4 8 3 8 8 8 5 9 4 9 9 9 1 10 10 10 6 10 2 11 6 11 7 11 3 12 7 12 8 12 4 13 8 13 9 13 5 14 9 14 10 14 6 15 10 15 11 15 7 16 6 16 11 16 8 17 7 17 11 17 9 18 8 18 11 18 10 19 9 19 11 19</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Икосфера_031-mesh" name="Икосфера.031">
+      <mesh>
+        <source id="Икосфера_031-mesh-positions">
+          <float_array id="Икосфера_031-mesh-positions-array" count="36">0.2023083 0.3142048 -0.7128133 0.7722625 -0.2842182 -0.2901357 0.01598292 -0.7368561 -0.2604813 -0.7370677 0 -0.447215 -0.276385 0.6700806 -0.447215 0.7236 0.52572 -0.447215 0.276385 -0.7092797 0.447215 -0.5306378 -0.4757725 0.447215 -0.4631757 0.52572 0.218426 0.5071197 0.6161807 0.447215 0.8066523 0 0.447215 0.09214752 0 0.768639</float_array>
+          <technique_common>
+            <accessor source="#Икосфера_031-mesh-positions-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Икосфера_031-mesh-normals">
+          <float_array id="Икосфера_031-mesh-normals-array" count="60">0.2155749 -0.4180046 -0.8824962 0.4932529 -0.1369657 -0.8590354 -0.1355266 -0.3712896 -0.9185732 -0.3353862 0.2305791 -0.9134273 0.09762656 0.6762588 -0.7301665 0.9967793 0.04733359 -0.06473463 0.5031903 -0.8507023 -0.1520037 -0.6494542 -0.7232355 -0.2348185 -0.8192437 0.5632328 -0.1077434 0.1425759 0.9876223 -0.06537806 0.7863382 -0.5878773 0.1899278 -0.2752699 -0.9513587 0.1383586 -0.9488147 0.1297006 0.287973 -0.1321237 0.9757457 0.1745381 0.8861355 0.4307608 0.1709066 0.3922212 -0.29323 0.8718823 -0.1262955 -0.4364896 0.8908009 -0.5743331 0.2188911 0.7888144 -0.2384949 0.5705555 0.7858669 0.4023324 0.1955785 0.8943588</float_array>
+          <technique_common>
+            <accessor source="#Икосфера_031-mesh-normals-array" count="20" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Икосфера_031-mesh-vertices">
+          <input semantic="POSITION" source="#Икосфера_031-mesh-positions"/>
+        </vertices>
+        <triangles material="Материал-material" count="20">
+          <input semantic="VERTEX" source="#Икосфера_031-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Икосфера_031-mesh-normals" offset="1"/>
+          <p>0 0 1 0 2 0 1 1 0 1 5 1 0 2 2 2 3 2 0 3 3 3 4 3 0 4 4 4 5 4 1 5 5 5 10 5 2 6 1 6 6 6 3 7 2 7 7 7 4 8 3 8 8 8 5 9 4 9 9 9 1 10 10 10 6 10 2 11 6 11 7 11 3 12 7 12 8 12 4 13 8 13 9 13 5 14 9 14 10 14 6 15 10 15 11 15 7 16 6 16 11 16 8 17 7 17 11 17 9 18 8 18 11 18 10 19 9 19 11 19</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Икосфера_032-mesh" name="Икосфера.032">
+      <mesh>
+        <source id="Икосфера_032-mesh-positions">
+          <float_array id="Икосфера_032-mesh-positions-array" count="36">0.2023083 0.3142048 -0.7128133 0.7722625 -0.2842182 -0.2901357 0.01598292 -0.7368561 -0.2604813 -0.7370677 0 -0.447215 -0.276385 0.6700806 -0.447215 0.7236 0.52572 -0.447215 0.276385 -0.7092797 0.447215 -0.5306378 -0.4757725 0.447215 -0.4631757 0.52572 0.218426 0.5071197 0.6161807 0.447215 0.8066523 0 0.447215 0.09214752 0 0.768639</float_array>
+          <technique_common>
+            <accessor source="#Икосфера_032-mesh-positions-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Икосфера_032-mesh-normals">
+          <float_array id="Икосфера_032-mesh-normals-array" count="60">0.2155749 -0.4180046 -0.8824962 0.4932529 -0.1369657 -0.8590354 -0.1355266 -0.3712896 -0.9185732 -0.3353862 0.2305791 -0.9134273 0.09762656 0.6762588 -0.7301665 0.9967793 0.04733359 -0.06473463 0.5031903 -0.8507023 -0.1520037 -0.6494542 -0.7232355 -0.2348185 -0.8192437 0.5632328 -0.1077434 0.1425759 0.9876223 -0.06537806 0.7863382 -0.5878773 0.1899278 -0.2752699 -0.9513587 0.1383586 -0.9488147 0.1297006 0.287973 -0.1321237 0.9757457 0.1745381 0.8861355 0.4307608 0.1709066 0.3922212 -0.29323 0.8718823 -0.1262955 -0.4364896 0.8908009 -0.5743331 0.2188911 0.7888144 -0.2384949 0.5705555 0.7858669 0.4023324 0.1955785 0.8943588</float_array>
+          <technique_common>
+            <accessor source="#Икосфера_032-mesh-normals-array" count="20" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Икосфера_032-mesh-vertices">
+          <input semantic="POSITION" source="#Икосфера_032-mesh-positions"/>
+        </vertices>
+        <triangles material="Материал-material" count="20">
+          <input semantic="VERTEX" source="#Икосфера_032-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Икосфера_032-mesh-normals" offset="1"/>
+          <p>0 0 1 0 2 0 1 1 0 1 5 1 0 2 2 2 3 2 0 3 3 3 4 3 0 4 4 4 5 4 1 5 5 5 10 5 2 6 1 6 6 6 3 7 2 7 7 7 4 8 3 8 8 8 5 9 4 9 9 9 1 10 10 10 6 10 2 11 6 11 7 11 3 12 7 12 8 12 4 13 8 13 9 13 5 14 9 14 10 14 6 15 10 15 11 15 7 16 6 16 11 16 8 17 7 17 11 17 9 18 8 18 11 18 10 19 9 19 11 19</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Икосфера_033-mesh" name="Икосфера.033">
+      <mesh>
+        <source id="Икосфера_033-mesh-positions">
+          <float_array id="Икосфера_033-mesh-positions-array" count="36">0.2023083 0.3142048 -0.7128133 0.7722625 -0.2842182 -0.2901357 0.01598292 -0.7368561 -0.2604813 -0.7370677 0 -0.447215 -0.276385 0.6700806 -0.447215 0.7236 0.52572 -0.447215 0.276385 -0.7092797 0.447215 -0.5306378 -0.4757725 0.447215 -0.4631757 0.52572 0.218426 0.5071197 0.6161807 0.447215 0.8066523 0 0.447215 0.09214752 0 0.768639</float_array>
+          <technique_common>
+            <accessor source="#Икосфера_033-mesh-positions-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Икосфера_033-mesh-normals">
+          <float_array id="Икосфера_033-mesh-normals-array" count="60">0.2155749 -0.4180046 -0.8824962 0.4932529 -0.1369657 -0.8590354 -0.1355266 -0.3712896 -0.9185732 -0.3353862 0.2305791 -0.9134273 0.09762656 0.6762588 -0.7301665 0.9967793 0.04733359 -0.06473463 0.5031903 -0.8507023 -0.1520037 -0.6494542 -0.7232355 -0.2348185 -0.8192437 0.5632328 -0.1077434 0.1425759 0.9876223 -0.06537806 0.7863382 -0.5878773 0.1899278 -0.2752699 -0.9513587 0.1383586 -0.9488147 0.1297006 0.287973 -0.1321237 0.9757457 0.1745381 0.8861355 0.4307608 0.1709066 0.3922212 -0.29323 0.8718823 -0.1262955 -0.4364896 0.8908009 -0.5743331 0.2188911 0.7888144 -0.2384949 0.5705555 0.7858669 0.4023324 0.1955785 0.8943588</float_array>
+          <technique_common>
+            <accessor source="#Икосфера_033-mesh-normals-array" count="20" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Икосфера_033-mesh-vertices">
+          <input semantic="POSITION" source="#Икосфера_033-mesh-positions"/>
+        </vertices>
+        <triangles material="Материал-material" count="20">
+          <input semantic="VERTEX" source="#Икосфера_033-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Икосфера_033-mesh-normals" offset="1"/>
+          <p>0 0 1 0 2 0 1 1 0 1 5 1 0 2 2 2 3 2 0 3 3 3 4 3 0 4 4 4 5 4 1 5 5 5 10 5 2 6 1 6 6 6 3 7 2 7 7 7 4 8 3 8 8 8 5 9 4 9 9 9 1 10 10 10 6 10 2 11 6 11 7 11 3 12 7 12 8 12 4 13 8 13 9 13 5 14 9 14 10 14 6 15 10 15 11 15 7 16 6 16 11 16 8 17 7 17 11 17 9 18 8 18 11 18 10 19 9 19 11 19</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Икосфера_034-mesh" name="Икосфера.034">
+      <mesh>
+        <source id="Икосфера_034-mesh-positions">
+          <float_array id="Икосфера_034-mesh-positions-array" count="36">0.2023083 0.3142048 -0.7128133 0.7722625 -0.2842182 -0.2901357 0.01598292 -0.7368561 -0.2604813 -0.7370677 0 -0.447215 -0.276385 0.6700806 -0.447215 0.7236 0.52572 -0.447215 0.276385 -0.7092797 0.447215 -0.5306378 -0.4757725 0.447215 -0.4631757 0.52572 0.218426 0.5071197 0.6161807 0.447215 0.8066523 0 0.447215 0.09214752 0 0.768639</float_array>
+          <technique_common>
+            <accessor source="#Икосфера_034-mesh-positions-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Икосфера_034-mesh-normals">
+          <float_array id="Икосфера_034-mesh-normals-array" count="60">0.2155749 -0.4180046 -0.8824962 0.4932529 -0.1369657 -0.8590354 -0.1355266 -0.3712896 -0.9185732 -0.3353862 0.2305791 -0.9134273 0.09762656 0.6762588 -0.7301665 0.9967793 0.04733359 -0.06473463 0.5031903 -0.8507023 -0.1520037 -0.6494542 -0.7232355 -0.2348185 -0.8192437 0.5632328 -0.1077434 0.1425759 0.9876223 -0.06537806 0.7863382 -0.5878773 0.1899278 -0.2752699 -0.9513587 0.1383586 -0.9488147 0.1297006 0.287973 -0.1321237 0.9757457 0.1745381 0.8861355 0.4307608 0.1709066 0.3922212 -0.29323 0.8718823 -0.1262955 -0.4364896 0.8908009 -0.5743331 0.2188911 0.7888144 -0.2384949 0.5705555 0.7858669 0.4023324 0.1955785 0.8943588</float_array>
+          <technique_common>
+            <accessor source="#Икосфера_034-mesh-normals-array" count="20" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Икосфера_034-mesh-vertices">
+          <input semantic="POSITION" source="#Икосфера_034-mesh-positions"/>
+        </vertices>
+        <triangles material="Материал-material" count="20">
+          <input semantic="VERTEX" source="#Икосфера_034-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Икосфера_034-mesh-normals" offset="1"/>
+          <p>0 0 1 0 2 0 1 1 0 1 5 1 0 2 2 2 3 2 0 3 3 3 4 3 0 4 4 4 5 4 1 5 5 5 10 5 2 6 1 6 6 6 3 7 2 7 7 7 4 8 3 8 8 8 5 9 4 9 9 9 1 10 10 10 6 10 2 11 6 11 7 11 3 12 7 12 8 12 4 13 8 13 9 13 5 14 9 14 10 14 6 15 10 15 11 15 7 16 6 16 11 16 8 17 7 17 11 17 9 18 8 18 11 18 10 19 9 19 11 19</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Цилиндр_003-mesh" name="Цилиндр.003">
+      <mesh>
+        <source id="Цилиндр_003-mesh-positions">
+          <float_array id="Цилиндр_003-mesh-positions-array" count="144">0.06787896 0.854096 -1.033109 -0.04987215 1.171401 1.093374 0.7432286 0.3508161 -1.106965 0.9319486 0.5433092 1.150796 0.6753496 -0.5032799 -1.073856 0.8920021 -0.6280917 1.12637 -0.06787902 -0.854096 -0.9668912 -0.1297652 -1.171401 1.044522 -0.7432286 -0.350816 -0.8930351 -1.111586 -0.543309 0.9871 -0.6753497 0.5032798 -0.9261438 -1.071639 0.6280916 1.011526 0.469985 1 -0.3152047 0.469985 1 0.351462 1.33601 0.5 0.351462 1.33601 0.5 -0.3152047 1.33601 -0.5000001 0.351462 1.33601 -0.5000001 -0.3152047 0.4699849 -1 0.351462 0.4699849 -1 -0.3152047 -0.3960404 -0.4999999 0.351462 -0.3960404 -0.4999999 -0.3152047 -0.3960404 0.4999999 0.351462 -0.3960404 0.4999999 -0.3152047 4.351013 2.408401 2.589112 -4.624048 1.934604 0.5259711 3.349754 1.204201 3.357714 -5.428332 0.967302 1.143369 3.349754 -1.204201 3.357714 -5.428332 -0.9673022 1.143369 4.351013 -2.408401 2.589111 -4.624048 -1.934604 0.525971 5.352272 -1.2042 1.820509 -3.819764 -0.9673018 -0.09142649 5.352272 1.2042 1.820509 -3.819764 0.9673018 -0.09142649 1.179006 2.148877 2.039818 -1.812681 2.148877 1.352104 -2.706046 1.074439 2.037884 0.2856408 1.074439 2.725597 -2.706046 -1.074439 2.037884 0.2856408 -1.074439 2.725597 -1.81268 -2.148877 1.352104 1.179006 -2.148877 2.039818 -0.9193153 -1.074438 0.666325 2.072371 -1.074438 1.354038 -0.9193153 1.074438 0.666325 2.072371 1.074438 1.354038</float_array>
+          <technique_common>
+            <accessor source="#Цилиндр_003-mesh-positions-array" count="48" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Цилиндр_003-mesh-normals">
+          <float_array id="Цилиндр_003-mesh-normals-array" count="255">0.4897339 0.8482441 0.2016003 0.8924559 0 0.4511347 0.4949412 -0.8572637 0.1418876 -0.4198234 -0.7271552 -0.5431333 -0.07010638 -0.01840633 0.9973697 -0.4380295 0.7586895 -0.4822037 -0.664129 0 -0.747618 -0.129369 -0.02814179 -0.9911971 -0.9057502 0.08805453 0.4145637 -1 0 0 -0.3972948 0.8985488 0.1864591 -0.5000001 0.8660254 0 -0.5813761 -0.8010587 0.1425017 -0.5000001 -0.8660254 0 0.3258696 -0.8289715 -0.4545495 0.4999999 -0.8660255 0 0.751578 -0.08508872 -0.6541333 1 0 0 0.5069186 0.7440915 -0.4351568 0.5 0.8660255 0 -0.2571812 0.662736 0.7033056 -0.3121691 0 0.9500266 -0.2571812 -0.6627361 0.7033056 0.1747093 -0.6288469 -0.7576466 -0.6089158 0 -0.7932349 0.1747092 0.6288469 -0.7576465 0.2527694 0 -0.9675266 0.6089157 0 0.793235 0.1408041 0 -0.9900375 0.2240318 0 -0.9745818 0.09098112 0.5884374 -0.8034076 0.1742301 0.6286325 -0.7579348 0.09098118 -0.5884374 -0.8034077 0.1742301 -0.6286324 -0.7579348 -0.1821403 -0.6321474 0.7531365 -0.17423 -0.6286327 0.7579346 -0.2020421 0 0.9793769 -0.2240318 0 0.9745818 -0.1821404 0.6321473 0.7531366 -0.1742301 0.6286326 0.7579346 0.5234175 0.8341091 0.1740576 0.8698024 -0.03991627 0.491783 0.4513977 -0.8751562 0.1741888 -0.4324088 -0.7249503 -0.536162 -0.07010626 -0.01840645 0.9973697 -0.07010632 -0.01840656 0.9973697 -0.07010626 -0.01840621 0.9973697 -0.3666315 0.7684994 -0.5243949 -0.6945524 0.03866529 -0.7184024 -0.1293689 -0.02814209 -0.9911971 -0.1293689 -0.02814191 -0.9911971 -0.1293689 -0.02814179 -0.9911971 -0.8571721 0 0.51503 -1 0 0 -0.4973154 0.8613753 0.1034892 -0.5000001 0.8660254 0 -0.4884471 -0.846015 0.2137241 -0.5000001 -0.8660254 0 0.4590553 -0.7951072 -0.3963242 0.4999999 -0.8660255 0 0.8005036 0 -0.5993279 0.4404082 0.7628096 -0.4734576 0.5 0.8660254 0 -0.312169 0 0.9500266 -0.2571813 -0.6627361 0.7033055 0.1747093 -0.6288469 -0.7576466 -0.6089158 0 -0.7932349 -0.6089159 0 -0.7932348 -0.6089158 0 -0.7932349 0.1747093 0.6288469 -0.7576465 0.2527694 0 -0.9675266 0.6089158 0 0.793235 0.6089158 0 0.7932349 0.6089158 0 0.7932349 0.1408041 0 -0.9900375 0.2240318 0 -0.9745818 0.0909813 0.5884374 -0.8034077 0.17423 0.6286325 -0.7579348 0.09098118 -0.5884372 -0.8034078 0.17423 -0.6286325 -0.7579348 -0.1821403 -0.6321474 0.7531365 -0.17423 -0.6286327 0.7579346 -0.2020422 0 0.9793769 -0.1821404 0.6321472 0.7531366 -0.17423 0.6286326 0.7579347</float_array>
+          <technique_common>
+            <accessor source="#Цилиндр_003-mesh-normals-array" count="85" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Цилиндр_003-mesh-map-0">
+          <float_array id="Цилиндр_003-mesh-map-0-array" count="528">0.5413368 0.5431979 0.6022043 0.487831 0.5239858 0.5113011 0.6022043 0.487831 0.5241931 0.5113011 0.5239858 0.5113011 0.6011106 0.4904743 0.5417513 0.5431979 0.5241931 0.5113011 0.6146405 0.5320344 0.5591023 0.5750948 0.5417513 0.5431979 0.6303579 0.568308 0.6292642 0.5709512 0.6022043 0.487831 0.5588951 0.5750948 0.616828 0.5267479 0.5413368 0.5431979 0.6292642 0.5709512 0.5588951 0.5750948 0.5591023 0.5750948 0.4080929 0.6031096 0.4569544 0.6475933 0.4525064 0.6466819 0.4569544 0.6475933 0.5004433 0.6070815 0.4525064 0.6466819 0.5591023 0.5750948 0.5004433 0.6070815 0.5006506 0.6070815 0.5004433 0.6070815 0.4280756 0.62444 0.4525064 0.6466819 0.5588951 0.5750948 0.4828851 0.5751847 0.5004433 0.6070815 0.4369716 0.626263 0.5006506 0.6070815 0.4569544 0.6475933 0.5417513 0.5431979 0.5006506 0.6070815 0.4832996 0.5751848 0.4125409 0.6040211 0.4832996 0.5751848 0.4369716 0.626263 0.5241931 0.5113011 0.4832996 0.5751848 0.4657413 0.5432879 0.4080929 0.6031096 0.4657413 0.5432879 0.4125409 0.6040211 0.5239858 0.5113011 0.4657413 0.5432879 0.4655341 0.5432879 0.4828851 0.5751847 0.4080929 0.6031096 0.4280756 0.62444 0.4828851 0.5751847 0.5239858 0.5113011 0.4655341 0.5432879 0.6591132 0.7224448 0.7531952 0.5792605 0.6748394 0.5792605 0.7296558 0.7224448 0.7536405 0.5792605 0.7531952 0.5792605 0.7536405 0.5792605 0.659915 0.7224448 0.6757301 0.5792605 0.6757301 0.5792605 0.5893725 0.7224448 0.5973743 0.5792605 0.5889715 0.7224448 0.5893725 0.7224448 0.7296558 0.7224448 0.5889715 0.7224448 0.6748394 0.5792605 0.596929 0.5792605 0.5893725 0.7224448 0.596929 0.5792605 0.5973743 0.5792605 0.746834 0.2928919 0.5721943 0.2928919 0.5716952 0.2928919 0.5721943 0.2928919 0.596929 0.4360762 0.5716952 0.2928919 0.5973743 0.5792605 0.596929 0.4360762 0.5973743 0.4360762 0.596929 0.4360762 0.659015 0.2928919 0.5716952 0.2928919 0.596929 0.5792605 0.6748394 0.4360762 0.596929 0.4360762 0.6600132 0.2928919 0.5973743 0.4360762 0.5721943 0.2928919 0.6757301 0.4360762 0.5973743 0.5792605 0.5973743 0.4360762 0.7473331 0.2928918 0.6757301 0.4360762 0.6600132 0.2928919 0.7536405 0.4360762 0.6757301 0.5792605 0.6757301 0.4360762 0.746834 0.2928919 0.7536405 0.4360762 0.7473331 0.2928918 0.7531952 0.5792605 0.7536405 0.4360762 0.7531952 0.4360761 0.6748394 0.4360762 0.746834 0.2928919 0.659015 0.2928919 0.6748394 0.5792605 0.7531952 0.4360761 0.6748394 0.4360762 0.5413368 0.5431979 0.616828 0.5267479 0.6022043 0.487831 0.6022043 0.487831 0.6011106 0.4904743 0.5241931 0.5113011 0.6011106 0.4904743 0.6146405 0.5320344 0.5417513 0.5431979 0.6146405 0.5320344 0.6292642 0.5709512 0.5591023 0.5750948 0.6011106 0.4904743 0.6022043 0.487831 0.6292642 0.5709512 0.616828 0.5267479 0.6303579 0.568308 0.6022043 0.487831 0.6292642 0.5709512 0.6146405 0.5320344 0.6011106 0.4904743 0.5588951 0.5750948 0.6303579 0.568308 0.616828 0.5267479 0.6292642 0.5709512 0.6303579 0.568308 0.5588951 0.5750948 0.4525064 0.6466819 0.4280756 0.62444 0.4080929 0.6031096 0.4080929 0.6031096 0.4125409 0.6040211 0.4569544 0.6475933 0.4369716 0.626263 0.4569544 0.6475933 0.4125409 0.6040211 0.4569544 0.6475933 0.5006506 0.6070815 0.5004433 0.6070815 0.5591023 0.5750948 0.5588951 0.5750948 0.5004433 0.6070815 0.5004433 0.6070815 0.4828851 0.5751847 0.4280756 0.62444 0.5588951 0.5750948 0.5413368 0.5431979 0.4828851 0.5751847 0.4369716 0.626263 0.4832996 0.5751848 0.5006506 0.6070815 0.5417513 0.5431979 0.5591023 0.5750948 0.5006506 0.6070815 0.4125409 0.6040211 0.4657413 0.5432879 0.4832996 0.5751848 0.5241931 0.5113011 0.5417513 0.5431979 0.4832996 0.5751848 0.4080929 0.6031096 0.4655341 0.5432879 0.4657413 0.5432879 0.5239858 0.5113011 0.5241931 0.5113011 0.4657413 0.5432879 0.4828851 0.5751847 0.4655341 0.5432879 0.4080929 0.6031096 0.4828851 0.5751847 0.5413368 0.5431979 0.5239858 0.5113011 0.6591132 0.7224448 0.7296558 0.7224448 0.7531952 0.5792605 0.7296558 0.7224448 0.7300567 0.7224448 0.7536405 0.5792605 0.7536405 0.5792605 0.7300567 0.7224448 0.659915 0.7224448 0.6757301 0.5792605 0.659915 0.7224448 0.5893725 0.7224448 0.7300567 0.7224448 0.7296558 0.7224448 0.5893725 0.7224448 0.6591132 0.7224448 0.5889715 0.7224448 0.7296558 0.7224448 0.5893725 0.7224448 0.659915 0.7224448 0.7300567 0.7224448 0.5889715 0.7224448 0.6591132 0.7224448 0.6748394 0.5792605 0.5893725 0.7224448 0.5889715 0.7224448 0.596929 0.5792605 0.5716952 0.2928919 0.659015 0.2928919 0.746834 0.2928919 0.746834 0.2928919 0.7473331 0.2928918 0.5721943 0.2928919 0.6600132 0.2928919 0.5721943 0.2928919 0.7473331 0.2928918 0.5721943 0.2928919 0.5973743 0.4360762 0.596929 0.4360762 0.5973743 0.5792605 0.596929 0.5792605 0.596929 0.4360762 0.596929 0.4360762 0.6748394 0.4360762 0.659015 0.2928919 0.596929 0.5792605 0.6748394 0.5792605 0.6748394 0.4360762 0.6600132 0.2928919 0.6757301 0.4360762 0.5973743 0.4360762 0.6757301 0.4360762 0.6757301 0.5792605 0.5973743 0.5792605 0.7473331 0.2928918 0.7536405 0.4360762 0.6757301 0.4360762 0.7536405 0.4360762 0.7536405 0.5792605 0.6757301 0.5792605 0.746834 0.2928919 0.7531952 0.4360761 0.7536405 0.4360762 0.7531952 0.5792605 0.7536405 0.5792605 0.7536405 0.4360762 0.6748394 0.4360762 0.7531952 0.4360761 0.746834 0.2928919 0.6748394 0.5792605 0.7531952 0.5792605 0.7531952 0.4360761</float_array>
+          <technique_common>
+            <accessor source="#Цилиндр_003-mesh-map-0-array" count="264" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Цилиндр_003-mesh-colors-Col" name="Col">
+          <float_array id="Цилиндр_003-mesh-colors-Col-array" count="792">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#Цилиндр_003-mesh-colors-Col-array" count="264" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Цилиндр_003-mesh-vertices">
+          <input semantic="POSITION" source="#Цилиндр_003-mesh-positions"/>
+        </vertices>
+        <triangles material="Материал_002-material" count="88">
+          <input semantic="VERTEX" source="#Цилиндр_003-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Цилиндр_003-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Цилиндр_003-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#Цилиндр_003-mesh-colors-Col" offset="3" set="0"/>
+          <p>13 0 0 0 3 0 1 1 14 0 2 2 3 1 3 3 16 1 4 4 14 1 5 5 5 2 6 6 18 2 7 7 16 2 8 8 7 3 9 9 20 3 10 10 18 3 11 11 11 4 12 12 9 4 13 13 3 4 14 14 22 5 15 15 1 5 16 16 13 5 17 17 9 6 18 18 22 6 19 19 20 6 20 20 2 7 21 21 8 7 22 22 10 7 23 23 8 8 24 24 23 8 25 25 10 8 26 26 20 9 27 27 23 9 28 28 21 9 29 29 23 10 30 30 0 10 31 31 10 10 32 32 22 11 33 33 12 11 34 34 23 11 35 35 6 12 36 36 21 12 37 37 8 12 38 38 18 13 39 39 21 13 40 40 19 13 41 41 4 14 42 42 19 14 43 43 6 14 44 44 16 15 45 45 19 15 46 46 17 15 47 47 2 16 48 48 17 16 49 49 4 16 50 50 14 17 51 51 17 17 52 52 15 17 53 53 12 18 54 54 2 18 55 55 0 18 56 56 12 19 57 57 14 19 58 58 15 19 59 59 25 20 60 60 38 20 61 61 37 20 62 62 27 21 63 63 40 21 64 64 38 21 65 65 40 22 66 66 31 22 67 67 42 22 68 68 42 23 69 69 33 23 70 70 44 23 71 71 35 24 72 72 33 24 73 73 27 24 74 74 35 25 75 75 37 25 76 76 46 25 77 77 33 26 78 78 46 26 79 79 44 26 80 80 26 27 81 81 32 27 82 82 34 27 83 83 32 28 84 84 47 28 85 85 34 28 86 86 44 29 87 87 47 29 88 88 45 29 89 89 47 30 90 90 24 30 91 91 34 30 92 92 46 31 93 93 36 31 94 94 47 31 95 95 30 32 96 96 45 32 97 97 32 32 98 98 43 33 99 99 44 33 100 100 45 33 101 101 28 34 102 102 43 34 103 103 30 34 104 104 41 35 105 105 42 35 106 106 43 35 107 107 26 36 108 108 41 36 109 109 28 36 110 110 38 37 111 111 41 37 112 112 39 37 113 113 36 38 114 114 26 38 115 115 24 38 116 116 37 39 117 117 39 39 118 118 36 39 119 119 13 40 120 120 1 40 121 121 3 40 122 122 3 41 123 123 5 41 124 124 16 41 125 125 5 42 126 126 7 42 127 127 18 42 128 128 7 43 129 129 9 43 130 130 20 43 131 131 5 44 132 132 3 44 133 133 9 44 134 134 1 45 135 135 11 45 136 136 3 45 137 137 9 46 138 138 7 46 139 139 5 46 140 140 22 47 141 141 11 47 142 142 1 47 143 143 9 48 144 144 11 48 145 145 22 48 146 146 10 49 147 147 0 49 148 148 2 49 149 149 2 50 150 150 4 50 151 151 8 50 152 152 6 51 153 153 8 51 154 154 4 51 155 155 8 52 156 156 21 52 157 157 23 52 158 158 20 53 159 159 22 53 160 160 23 53 161 161 23 54 162 162 12 54 163 163 0 54 164 164 22 55 165 165 13 55 166 166 12 55 167 167 6 56 168 168 19 56 169 169 21 56 170 170 18 57 171 171 20 57 172 172 21 57 173 173 4 58 174 174 17 58 175 175 19 58 176 176 16 59 177 177 18 59 178 178 19 59 179 179 2 60 180 180 15 60 181 181 17 60 182 182 14 17 183 183 16 17 184 184 17 17 185 185 12 61 186 186 15 61 187 187 2 61 188 188 12 62 189 189 13 62 190 190 14 62 191 191 25 20 192 192 27 20 193 193 38 20 194 194 27 63 195 195 29 63 196 196 40 63 197 197 40 64 198 198 29 64 199 199 31 64 200 200 42 65 201 201 31 65 202 202 33 65 203 203 29 66 204 204 27 66 205 205 33 66 206 206 25 67 207 207 35 67 208 208 27 67 209 209 33 68 210 210 31 68 211 211 29 68 212 212 35 69 213 213 25 69 214 214 37 69 215 215 33 70 216 216 35 70 217 217 46 70 218 218 34 71 219 219 24 71 220 220 26 71 221 221 26 72 222 222 28 72 223 223 32 72 224 224 30 73 225 225 32 73 226 226 28 73 227 227 32 74 228 228 45 74 229 229 47 74 230 230 44 75 231 231 46 75 232 232 47 75 233 233 47 76 234 234 36 76 235 235 24 76 236 236 46 77 237 237 37 77 238 238 36 77 239 239 30 78 240 240 43 78 241 241 45 78 242 242 43 79 243 243 42 79 244 244 44 79 245 245 28 80 246 246 41 80 247 247 43 80 248 248 41 81 249 249 40 81 250 250 42 81 251 251 26 82 252 252 39 82 253 253 41 82 254 254 38 37 255 255 40 37 256 256 41 37 257 257 36 83 258 258 39 83 259 259 26 83 260 260 37 84 261 261 38 84 262 262 39 84 263 263</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Плоскость-mesh" name="Плоскость">
+      <mesh>
+        <source id="Плоскость-mesh-positions">
+          <float_array id="Плоскость-mesh-positions-array" count="12">-1 -1 0 1 -1 0 -1 1 0 1 1 0</float_array>
+          <technique_common>
+            <accessor source="#Плоскость-mesh-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Плоскость-mesh-normals">
+          <float_array id="Плоскость-mesh-normals-array" count="3">0 0 1</float_array>
+          <technique_common>
+            <accessor source="#Плоскость-mesh-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Плоскость-mesh-vertices">
+          <input semantic="POSITION" source="#Плоскость-mesh-positions"/>
+        </vertices>
+        <triangles material="Материал_003-material" count="2">
+          <input semantic="VERTEX" source="#Плоскость-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Плоскость-mesh-normals" offset="1"/>
+          <p>1 0 2 0 0 0 1 0 3 0 2 0</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers/>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="Икосфера" name="Икосфера" type="NODE">
+        <matrix sid="transform">-0.08997635 -0.8407101 0 1.919645 0.8407101 -0.08997635 0 0 0 0 0.8455112 0.5292678 0 0 0 1</matrix>
+        <instance_geometry url="#Икосфера-mesh" name="Икосфера">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Материал-material" target="#Материал-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Икосфера_001" name="Икосфера_001" type="NODE">
+        <matrix sid="transform">1.428577 0 0 3.112365 0 1.428577 0 0 0 0 1.428577 0.901536 0 0 0 1</matrix>
+        <instance_geometry url="#Икосфера_001-mesh" name="Икосфера_001">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Материал-material" target="#Материал-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Икосфера_002" name="Икосфера_002" type="NODE">
+        <matrix sid="transform">-0.7651458 -0.3708913 0 3.112365 0.3708913 -0.7651458 0 -1.399359 0 0 0.850299 0.5479946 0 0 0 1</matrix>
+        <instance_geometry url="#Икосфера_002-mesh" name="Икосфера_002">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Материал-material" target="#Материал-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Икосфера_003" name="Икосфера_003" type="NODE">
+        <matrix sid="transform">0.1064078 -0.6858504 0 2.207932 0.6858504 0.1064078 0 -0.9695989 0 0 0.6940558 0.4676132 0 0 0 1</matrix>
+        <instance_geometry url="#Икосфера_003-mesh" name="Икосфера_003">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Материал-material" target="#Материал-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Икосфера_004" name="Икосфера_004" type="NODE">
+        <matrix sid="transform">-0.1516932 1.080899 0 4.461973 -1.080899 -0.1516932 0 0.5568039 0 0 1.091492 0.5580635 0 0 0 1</matrix>
+        <instance_geometry url="#Икосфера_004-mesh" name="Икосфера_004">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Материал-material" target="#Материал-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Икосфера_005" name="Икосфера_005" type="NODE">
+        <matrix sid="transform">-0.2790988 0.4446437 0 2.853743 -0.4446437 -0.2790988 0 1.08436 0 0 0.5249802 0.3374081 0 0 0 1</matrix>
+        <instance_geometry url="#Икосфера_005-mesh" name="Икосфера_005">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Материал-material" target="#Материал-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Цилиндр_001" name="Цилиндр_001" type="NODE">
+        <matrix sid="transform">0.0672601 -0.334244 -0.2925945 0.4536192 -0.160454 -0.1401104 0.698006 -5.710117 -0.3179317 0 -0.4141701 2.379451 0 0 0 1</matrix>
+        <instance_geometry url="#Цилиндр_001-mesh" name="Цилиндр_001">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Материал_001-material" target="#Материал_001-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Икосфера_007" name="Икосфера_007" type="NODE">
+        <matrix sid="transform">-0.2387 1.700872 0 1.299938 -1.700872 -0.2387 0 -4.297202 0 0 1.71754 3.963304 0 0 0 1</matrix>
+        <instance_geometry url="#Икосфера_007-mesh" name="Икосфера_007">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Материал-material" target="#Материал-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Икосфера_010" name="Икосфера_010" type="NODE">
+        <matrix sid="transform">2.247967 0 0 -0.834612 0 2.247967 0 -5.052044 0 0 2.247967 3.914017 0 0 0 1</matrix>
+        <instance_geometry url="#Икосфера_010-mesh" name="Икосфера_010">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Материал-material" target="#Материал-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Икосфера_011" name="Икосфера_011" type="NODE">
+        <matrix sid="transform">-0.1415842 -1.322917 0 1.294477 1.322917 -0.1415842 0 -6.593878 0 0 1.330472 3.195993 0 0 0 1</matrix>
+        <instance_geometry url="#Икосфера_011-mesh" name="Икосфера_011">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Материал-material" target="#Материал-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Икосфера_012" name="Икосфера_012" type="NODE">
+        <matrix sid="transform">-0.2790988 0.4446437 0 0.0639801 -0.4446437 -0.2790988 0 -3.473412 0 0 0.5249802 2.892905 0 0 0 1</matrix>
+        <instance_geometry url="#Икосфера_012-mesh" name="Икосфера_012">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Материал-material" target="#Материал-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Икосфера_017" name="Икосфера_017" type="NODE">
+        <matrix sid="transform">-0.08997635 -0.8407101 0 0.5248402 0.8407101 -0.08997635 0 -3.386063 0 0 0.8455112 3.738989 0 0 0 1</matrix>
+        <instance_geometry url="#Икосфера_017-mesh" name="Икосфера_017">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Материал-material" target="#Материал-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Икосфера_018" name="Икосфера_018" type="NODE">
+        <matrix sid="transform">-0.08997635 -0.8407101 0 -2.398624 0.8407101 -0.08997635 0 6.218588 0 0 0.8455112 3.871615 0 0 0 1</matrix>
+        <instance_geometry url="#Икосфера_018-mesh" name="Икосфера_018">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Материал-material" target="#Материал-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Икосфера_019" name="Икосфера_019" type="NODE">
+        <matrix sid="transform">1.428577 0 0 1.590661 0 1.428577 0 6.745899 0 0 1.428577 3.741392 0 0 0 1</matrix>
+        <instance_geometry url="#Икосфера_019-mesh" name="Икосфера_019">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Материал-material" target="#Материал-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Икосфера_020" name="Икосфера_020" type="NODE">
+        <matrix sid="transform">-0.7651458 -0.3708913 0 -3.027746 0.3708913 -0.7651458 0 6.720208 0 0 0.850299 3.384476 0 0 0 1</matrix>
+        <instance_geometry url="#Икосфера_020-mesh" name="Икосфера_020">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Материал-material" target="#Материал-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Икосфера_021" name="Икосфера_021" type="NODE">
+        <matrix sid="transform">0.1064078 -0.6858504 0 -2.275707 0.6858504 0.1064078 0 7.658285 0 0 0.6940558 3.252485 0 0 0 1</matrix>
+        <instance_geometry url="#Икосфера_021-mesh" name="Икосфера_021">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Материал-material" target="#Материал-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Икосфера_022" name="Икосфера_022" type="NODE">
+        <matrix sid="transform">-0.1516932 1.080899 0 0.02920568 -1.080899 -0.1516932 0 8.712978 0 0 1.091492 4.131487 0 0 0 1</matrix>
+        <instance_geometry url="#Икосфера_022-mesh" name="Икосфера_022">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Материал-material" target="#Материал-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Икосфера_023" name="Икосфера_023" type="NODE">
+        <matrix sid="transform">-0.2790988 0.4446437 0 -2.502979 -0.4446437 -0.2790988 0 7.237064 0 0 0.5249802 3.960767 0 0 0 1</matrix>
+        <instance_geometry url="#Икосфера_023-mesh" name="Икосфера_023">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Материал-material" target="#Материал-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Икосфера_024" name="Икосфера_024" type="NODE">
+        <matrix sid="transform">-0.1415842 -1.322917 0 -1.926276 1.322917 -0.1415842 0 7.455097 0 0 1.330472 5.238033 0 0 0 1</matrix>
+        <instance_geometry url="#Икосфера_024-mesh" name="Икосфера_024">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Материал-material" target="#Материал-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Икосфера_025" name="Икосфера_025" type="NODE">
+        <matrix sid="transform">2.247967 0 0 -0.04944623 0 2.247967 0 7.455097 0 0 2.247967 6.337458 0 0 0 1</matrix>
+        <instance_geometry url="#Икосфера_025-mesh" name="Икосфера_025">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Материал-material" target="#Материал-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Икосфера_026" name="Икосфера_026" type="NODE">
+        <matrix sid="transform">-1.204011 -0.5836238 0 0.5346417 0.5836238 -1.204011 0 5.575509 0 0 1.338006 4.948726 0 0 0 1</matrix>
+        <instance_geometry url="#Икосфера_026-mesh" name="Икосфера_026">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Материал-material" target="#Материал-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Икосфера_027" name="Икосфера_027" type="NODE">
+        <matrix sid="transform">0.1674402 -1.079234 0 -1.472635 1.079234 0.1674402 0 5.929365 0 0 1.092146 5.65465 0 0 0 1</matrix>
+        <instance_geometry url="#Икосфера_027-mesh" name="Икосфера_027">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Материал-material" target="#Материал-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Икосфера_028" name="Икосфера_028" type="NODE">
+        <matrix sid="transform">-0.2387 1.700872 0 2.074259 -1.700872 -0.2387 0 8.331267 0 0 1.71754 5.031167 0 0 0 1</matrix>
+        <instance_geometry url="#Икосфера_028-mesh" name="Икосфера_028">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Материал-material" target="#Материал-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Икосфера_029" name="Икосфера_029" type="NODE">
+        <matrix sid="transform">-0.4391819 0.6996787 0 -0.4564055 -0.6996787 -0.4391819 0 9.161415 0 0 0.8260937 5.698135 0 0 0 1</matrix>
+        <instance_geometry url="#Икосфера_029-mesh" name="Икосфера_029">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Материал-material" target="#Материал-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Цилиндр_000" name="Цилиндр_000" type="NODE">
+        <matrix sid="transform">-0.223396 0 0.9718159 -1.544141 0 0.4653592 0 7.017699 -0.4082321 0 -0.5318046 3.191292 0 0 0 1</matrix>
+        <instance_geometry url="#Цилиндр_002-mesh" name="Цилиндр_000">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Материал_001-material" target="#Материал_001-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Икосфера_006" name="Икосфера_006" type="NODE">
+        <matrix sid="transform">-0.08997635 -0.8407101 0 0.5248402 0.8407101 -0.08997635 0 2.365561 0 0 0.8455112 3.738989 0 0 0 1</matrix>
+        <instance_geometry url="#Икосфера_030-mesh" name="Икосфера_006">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Материал-material" target="#Материал-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Икосфера_008" name="Икосфера_008" type="NODE">
+        <matrix sid="transform">-0.2790988 0.4446437 0 0.0639801 -0.4446437 -0.2790988 0 2.278213 0 0 0.5249802 2.892905 0 0 0 1</matrix>
+        <instance_geometry url="#Икосфера_031-mesh" name="Икосфера_008">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Материал-material" target="#Материал-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Икосфера_009" name="Икосфера_009" type="NODE">
+        <matrix sid="transform">-0.1415842 -1.322917 0 1.294477 1.322917 -0.1415842 0 -0.8422542 0 0 1.330472 3.195993 0 0 0 1</matrix>
+        <instance_geometry url="#Икосфера_032-mesh" name="Икосфера_009">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Материал-material" target="#Материал-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Икосфера_013" name="Икосфера_013" type="NODE">
+        <matrix sid="transform">2.247967 0 0 -0.834612 0 2.247967 0 0.6995802 0 0 2.247967 3.914017 0 0 0 1</matrix>
+        <instance_geometry url="#Икосфера_033-mesh" name="Икосфера_013">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Материал-material" target="#Материал-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Икосфера_014" name="Икосфера_014" type="NODE">
+        <matrix sid="transform">-0.2387 1.700872 0 1.299938 -1.700872 -0.2387 0 1.454422 0 0 1.71754 3.963304 0 0 0 1</matrix>
+        <instance_geometry url="#Икосфера_034-mesh" name="Икосфера_014">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Материал-material" target="#Материал-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Цилиндр_002" name="Цилиндр_002" type="NODE">
+        <matrix sid="transform">0.0672601 -0.334244 -0.2925945 0.4536192 -0.160454 -0.1401104 0.698006 0.04150724 -0.3179317 0 -0.4141701 2.379451 0 0 0 1</matrix>
+        <instance_geometry url="#Цилиндр_003-mesh" name="Цилиндр_002">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Материал_002-material" target="#Материал_002-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Плоскость" name="Плоскость" type="NODE">
+        <matrix sid="transform">447.5308 0 0 0 0 447.5308 0 0 0 0 447.5308 0.2507073 0 0 0 1</matrix>
+        <instance_geometry url="#Плоскость-mesh" name="Плоскость">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Материал_003-material" target="#Материал_003-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Камера" name="Камера" type="NODE">
+        <matrix sid="transform">0.187886 -0.2912022 0.9380299 25.5781 0.9821908 0.05570963 -0.1794369 -4.491597 -4.89288e-6 0.9550381 0.2964832 10.03314 0 0 0 1</matrix>
+        <instance_camera url="#Камера-camera"/>
+      </node>
+      <node id="Солнце" name="Солнце" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 12.07029 0 0 0 1</matrix>
+        <instance_light url="#Солнце-light"/>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>

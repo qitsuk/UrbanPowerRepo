@@ -29,6 +29,10 @@
             <a-asset item="" id="Slide_obj" src="assets/1231 Slide.obj"></a-asset>
             <a-asset item="" id="StopLight_1370_mtl" src="assets/1231 StopLight_1370.mtl"></a-asset>
             <a-asset item="" id="StopLight_1370_obj" src="assets/1231 StopLight_1370.obj"></a-asset>
+            <a-asset-item id="Fitness" src="assets/Italiandesignhotel1.0.dae"></a-asset-item>
+            <a-asset-item id="Apartment" src="assets/building_05.dae"></a-asset-item>
+            <a-asset item="" id="3D Mansion_OBJ_mtl" src="assets/3D Mansion_OBJ.mtl"></a-asset>
+            <a-asset item="" id="3D Mansion_OBJ_obj" src="assets/3D Mansion_OBJ.obj"></a-asset>
 
 
         </a-assets>
@@ -38,6 +42,20 @@
         <a-sky id="The Sky" src="#sky" material="" geometry=""></a-sky>
         <a-plane width="50" height="50" rotation="-90 0 0" src="#plane" scale="2 2 2" material="" geometry=""></a-plane>
         <a-box id="The Grass" geometry="width:38.69;height:0.1;depth:50" position="30.994 0 27.561" color="darkgreen" material=""></a-box>
+
+        <!-- Text! -->
+        <a-text value="Park/Playground" position="23.096 12.303 12.571" rotation="0 -119.99999999999999 0" scale="6 6 6" text="color:#000000"></a-text>
+        <a-text value="Mall" position="-10.654 12.303 -22.559" rotation="0 36.370000000000005 0" scale="6 6 6" text="color:#000000"></a-text>
+        <a-text value="Apartments" position="-13.457 9.124 16.514" rotation="0 113.09 0" scale="6 6 6" text="color:#000000"></a-text>
+        <a-text value="Fitness Center" position="16.895 7.388 -41.025" rotation="0 -20 0" scale="6 6 6" text="color:#000000"></a-text>
+        <a-text value="Cafe" position="31.546 8.767 -22.894" rotation="0 -30 0" scale="6 6 6" text="color:#000000"></a-text>
+
+        <!-- Buildings! -->
+        <a-collada-model id="Fitness-1" src="#tree_one" position="39.255 -0.075 -44.333" collada-model="assets/Italiandesignhotel1.0.dae" rotation="0 81.31 0" scale="1.2 1.2 1.2"></a-collada-model>
+        <a-collada-model id="Apartment-1" src="#tree_one" position="-35.928 0.065 11.417" collada-model="assets/building_05.dae" rotation="0 168.37 0" scale="1.2 1.2 1.2"></a-collada-model>
+        <a-collada-model id="Apartment-2" src="#tree_one" position="-23.292 0.065 42.222" collada-model="assets/building_05.dae" rotation="0 90.46 0" scale="1.2 1.2 1.2"></a-collada-model>
+        <a-entity id="Mall-1" obj-model="mtl:assets/3D Mansion_OBJ.mtl;obj:assets/3D Mansion_OBJ.obj" scale="0.2 0.23 0.25" position="-27.983 -0.072 -38.912" rotation="0 2 0"></a-entity>
+
 
         <!-- Stoplights! -->
         <a-entity id="StopLight-1" obj-model="mtl:assets/StopLight_1370.mtl;obj:assets/StopLight_1370.obj" scale="0.05 0.05 0.04" position="12.555 -0.051 -16.091" rotation="0 -6 0"></a-entity>
@@ -63,7 +81,6 @@
         <a-box id="Sidewalk 8" depth="50" height="0.1" width="2" position="13.956 -0.001 -33.297" geometry="depth:38.519999999999996" src="#sidewalk_texture" repeat="1 60" rotation="0 -8.91 0"></a-box>
 
         <!-- All things related to the park! -->
-        <a-text value="Park/Playground" position="23.096 12.303 12.571" rotation="0 -119.99999999999999 0" scale="3 3 3" text="color:#000000"></a-text>
         <a-collada-model id="Park Tree Two" src="#tree_one" position="33.254 0 36.634" scale="3 3 3" collada-model="assets/tree1.dae"></a-collada-model>
         <a-collada-model id="Park Tree Five" src="#tree_one" position="36.394 0 38.205" scale="5 5 5" collada-model="assets/tree1.dae"></a-collada-model>
         <a-entity id="Park Tree Six-2" obj-model="mtl:assets/tree01.mtl;obj:assets/tree01.obj" position="32.756 0 40.017" rotation="0 10 0" scale="0.02 0.02 0.02"></a-entity>

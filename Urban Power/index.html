@@ -2,6 +2,7 @@
 <head>
     <meta charset="UTF-8" />
     <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+    <script src="https://rawgit.com/fernandojsg/aframe-teleport-controls/master/dist/aframe-teleport-controls.min.js"></script>
     <title>Rådmandshaven</title>
 </head>
 <body class="a-body ">
@@ -17,7 +18,8 @@
             <a-asset-item id="tree_one" src="assets/tree1.dae"></a-asset-item>
             <a-asset item id="tree_two_mtl" src="assets/tree01.mtl"></a-asset>
             <a-asset item id="tree_two_obj" src="assets/tree01.obj"></a-asset>
-            <a-asset item id="birds" src="assets/birds.wav"></a-asset>
+            <a-asset item id="birds" src="assets/birds.mp3"></a-asset>
+            <a-asset item id="mall_sounds" src="assets/mall.mp3"
             <a-asset-item id="tower" src="assets/tower.dae"></a-asset-item>
             <a-asset item="" id="JungleGym_mtl" src="assets/JungleGym.mtl"></a-asset>
             <a-asset item="" id="JungleGym_obj" src="assets/JungleGym.obj"></a-asset>
@@ -36,8 +38,15 @@
             <a-asset item="" id="new_mall_obj" src="assets/mall.obj"></a-asset>
             <a-asset item="" id="new_mall_mtl" src="assets/mall.mtl"></a-asset>
 
-
         </a-assets>
+
+        <a-entity id="cameraRig">
+            <a-entity id="head" camera wasd-controls look-controls position="0 1 0" user-height="2" rotation="0 -90 0">
+                    <a-cursor color="#FF0000" fuse="true" fuseTimeout="1500" maxDistance="3000"/>
+            </a-entity>
+            <a-entity id="left-hand" teleport-controls="cameraRig: #cameraRig; teleportOrigin: #head;" gearvr-controls></a-entity>
+            <a-entity id="right-hand" teleport-controls="cameraRig: #cameraRig; teleportOrigin: #head;" gearvr-controls></a-entity>
+        </a-entity>
 
         <a-entity id="Mercedes SLK" obj-model="mtl:assets/SLK.mtl;obj:assets/SLK.obj" scale="0.012 0.012 0.012" position="1.66 2.087 2.295" rotation="0 180 0"></a-entity>
 
@@ -60,6 +69,9 @@
         <a-collada-model id="Apartment-2" src="#tree_one" position="-23.292 0.065 42.222" collada-model="assets/building_05.dae" rotation="0 90.46 0" scale="1.2 1.2 1.2"></a-collada-model>
         <!-- <a-entity id="Mall-1" obj-model="mtl:assets/3D Mansion_OBJ.mtl;obj:assets/3D Mansion_OBJ.obj" scale="0.2 0.23 0.25" position="-27.983 -0.072 -38.912" rotation="0 2 0"></a-entity> -->
         <a-entity id="new_mall_test" obj-model="mtl:assets/mall.mtl;obj:assets/mall.obj" position="-18.331 0 -34.753" rotation="0 106.79 0" scale="0.3 0.3 0.3"></a-entity>
+        <a-sound id="Mall Sounds" src="#mall_sounds" autoplay="true" loop="true" position="-12.336 0 -22.308" volume="20" sound="distanceModel:exponential"></a-sound>
+        <a-sound id="Mall Sounds-2" src="#mall_sounds" autoplay="true" loop="true" position="-6.403 0 -46.227" volume="20" sound="distanceModel:exponential"></a-sound>
+        <a-sound id="Sounds-2" src="#mall_sounds" autoplay="true" loop="true" position="-31.872 0 -28.333" volume="20" sound="distanceModel:exponential"></a-sound>
 
 
 
@@ -91,8 +103,8 @@
         <a-collada-model id="Park Tree Two" src="#tree_one" position="33.254 0 36.634" scale="3 3 3" collada-model="assets/tree1.dae"></a-collada-model>
         <a-collada-model id="Park Tree Five" src="#tree_one" position="36.394 0 38.205" scale="5 5 5" collada-model="assets/tree1.dae"></a-collada-model>
         <a-entity id="Park Tree Six-2" obj-model="mtl:assets/tree01.mtl;obj:assets/tree01.obj" position="32.756 0 40.017" rotation="0 10 0" scale="0.02 0.02 0.02"></a-entity>
-        <a-sound id="Bird Sounds" src="#birds" autoplay="true" loop="true" position="19.603 10.053 15.874" volume="10" sound=""></a-sound>
-        <a-sound id="Bird Sounds2" src="#birds" autoplay="true" loop="true" position="19.603 10.053 37.656" volume="10"></a-sound>
+        <a-sound id="Bird Sounds" src="#birds" autoplay="true" loop="true" position="26.004 10.053 20.486" volume="5" sound="maxDistance:20"></a-sound>
+        <a-sound id="Bird Sounds2" src="#birds" autoplay="true" loop="true" position="19.603 0 37.656" volume="5" sound="maxDistance:20"></a-sound>
 
                 <!-- Benches! -->
         <a-entity id="Bench-1" obj-model="mtl:assets/Park_Bench.mtl;obj:assets/Park Bench.obj" scale="0.007 0.007 0.007" position="34.166 0.419 35.558" rotation="0 149.18999999999997 0"></a-entity>

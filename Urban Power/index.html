@@ -16,7 +16,8 @@
             <a-asset item id="tree_two_mtl" src="assets/tree01.mtl"></a-asset>
             <a-asset item id="tree_two_obj" src="assets/tree01.obj"></a-asset>
             <a-asset item id="birds" src="assets/birds.wav"></a-asset>
-            <a-asset-item id="tower" src="assets/tower.dae"></a-asset-item>
+            <a-asset item id="bench_obj" src="assets/bench.obj"></a-asset>
+            <a-asset item id="bench_mtl" src="assets/bench.mtl"></a-asset>
 
 
         </a-assets>
@@ -39,12 +40,10 @@
         <a-collada-model id="Park Tree Three" src="#tree_one" position="23.868 0 17.971" scale="4.5 4.5 4.5" collada-model="assets/tree1.dae"></a-collada-model>
         <a-collada-model id="Park Tree Four" src="#tree_one" position="14.682 0 10.56" scale="3.5 3.5 3.5" collada-model="assets/tree1.dae"></a-collada-model>
         <a-collada-model id="Park Tree Five" src="#tree_one" position="27.868 0 11.705" scale="5 5 5" collada-model="assets/tree1.dae"></a-collada-model>
+        <a-entity id="Bench 1" obj-model="mtl:assets/bench.mtl;obj:assets/bench.obj" position="12.312 0.534 6.435" rotation="0 90 0" scale="0.007 0.007 0.007"></a-entity>
         <a-entity id="Park Tree Six" obj-model="obj:#tree_two_obj;mtl:#tree_two_mtl" position="16.992 0 22.122" rotation="0 23.892340056955327 0" scale="0.02 0.02 0.02"></a-entity>
         <a-sound id="Bird Sounds" src="#birds" autoplay="true" loop="true" position="19.603 10.053 15.874" volume="10" sound=""></a-sound>
         <a-sound id="Bird Sounds2" src="#birds" autoplay="true" loop="true" position="19.603 10.053 37.656" volume="10"></a-sound>
-
-        <!-- The tower -->
-        <a-collada-model id="The Tower" src="#tower" collada-model="assets/tower.dae"></a-collada-model>
     </a-scene>
 </body>
 </html>

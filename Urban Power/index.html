@@ -13,6 +13,9 @@
             <img id="sidewalk_texture" src="assets/sidewalk-texture.jpg">
             <img id="road_texture" src="assets/road_texture.jpg">
             <img id="road_texture_center" src="assets/road_texture_center.jpg">
+            <img id="parking_lot" src="assets/parking_lot.png">
+            <img id="parking_lot_background" src="assets/parking_lot_background.png">
+            <img id="grass" src="assets/grass.jpg">
             <a-asset item="" id="rolls_mtl" src="assets/SLK.mtl"></a-asset>
             <a-asset item="" id="rolls_obj" src="assets/SLK.obj"></a-asset>
             <a-asset-item id="tree_one" src="assets/tree1.dae"></a-asset-item>
@@ -31,14 +34,19 @@
             <a-asset item="" id="Slide_obj" src="assets/1231 Slide.obj"></a-asset>
             <a-asset item="" id="StopLight_1370_mtl" src="assets/1231 StopLight_1370.mtl"></a-asset>
             <a-asset item="" id="StopLight_1370_obj" src="assets/1231 StopLight_1370.obj"></a-asset>
-            <a-asset-item id="Fitness" src="assets/Italiandesignhotel1.0.dae"></a-asset-item>
             <a-asset-item id="Apartment" src="assets/building_05.dae"></a-asset-item>
             <a-asset item="" id="3D Mansion_OBJ_mtl" src="assets/3D Mansion_OBJ.mtl"></a-asset>
             <a-asset item="" id="3D Mansion_OBJ_obj" src="assets/3D Mansion_OBJ.obj"></a-asset>
             <a-asset item="" id="new_mall_obj" src="assets/mall.obj"></a-asset>
             <a-asset item="" id="new_mall_mtl" src="assets/mall.mtl"></a-asset>
-            <a-asset item="" id="pond_obj" src="assets/pond.obj"></a-asset>
-            <a-asset item="" id="pond_mtl" src="assets/pond.mtl"></a-asset>
+            <a-asset item="" id="PUSHILIN_pond_obj" src="assets/PUSHILIN_pond.obj"></a-asset>
+            <a-asset item="" id="PUSHILIN_pond_mtl" src="assets/PUSHILIN_pond.mtl"></a-asset>
+            <a-asset item="" id="wood_bench_obj" src="assets/wood_bench.obj"></a-asset>
+            <a-asset item="" id="wood_bench_mtl" src="assets/wood_bench.mtl"></a-asset>
+            <a-asset item="" id="low_poly_bilding_obj" src="assets/low_poly_bilding.obj"></a-asset>
+            <a-asset item="" id="low_poly_bilding_mtl" src="assets/low_poly_bilding.mtl"></a-asset>
+            <a-asset item="" id="3D Mansion_OBJ_obj" src="assets/3D Mansion_OBJ.obj"></a-asset>
+            <a-asset item="" id="3D Mansion_OBJ_mtl" src="assets/3D Mansion_OBJ.mtl"></a-asset>
 
         </a-assets>
 
@@ -50,33 +58,21 @@
             <a-entity id="right-hand" teleport-controls="cameraRig: #cameraRig; teleportOrigin: #head;" gearvr-controls></a-entity>
         </a-entity>
 
-        <a-entity id="Mercedes SLK" obj-model="mtl:assets/SLK.mtl;obj:assets/SLK.obj" scale="0.012 0.012 0.012" position="1.66 2.087 2.295" rotation="0 180 0"></a-entity>
-
         <a-sky id="The Sky" src="#sky" material="" geometry=""></a-sky>
         <a-plane width="50" height="50" rotation="-90 0 0" src="#plane" scale="2 2 2" material="" geometry=""></a-plane>
-        <a-box id="The Grass" geometry="width:38.69;height:0.1;depth:50" position="30.994 0 27.561" color="darkgreen" material=""></a-box>
 
-        <!-- WEIRD SHIT IS HAPPENING! -->
+        <a-box id="Mall Floor-1" depth="20" height="0.1" width="5" position="-25.438 -0.003 -40.166" geometry="depth:42.8;width:36" src="#parking_lot_background" repeat="5 5" rotation="0 75 0"></a-box>
+        <a-box id="Mall Floor-2" depth="20" height="0.1" width="5" position="-5.014 -0.003 -33.869" geometry="depth:35;width:3.97" src="#parking_lot_background" repeat="1 5" rotation="0 171.01 0"></a-box>
+        <a-box id="Mall Floor-3" depth="20" height="0.1" width="5" position="-45.963 -0.003 -45.663" geometry="depth:34.86;width:9.68" src="#parking_lot_background" repeat="1 5"></a-box>
+        <a-box id="Fitness/Cafe Floor-1" depth="20" height="0.1" width="5" position="39.908 -0.003 -33.966" geometry="width:43.99;depth:36.34999999999999" src="#parking_lot_background" repeat="5 5"></a-box>
+        <a-box id="Fitness/Cafe Floor-2" depth="20" height="0.1" width="5" position="17.991 -0.003 -33.314" geometry="width:6.000000000000003;depth:37.160000000000004" src="#parking_lot_background" repeat="1 5" rotation="0 -8.91 0"></a-box>
 
         <!-- Text! -->
         <a-text value="Park/Playground" position="23.096 12.303 12.571" rotation="0 -119.99999999999999 0" scale="6 6 6" text="color:#000000"></a-text>
-        <a-text value="Mall" position="-10.654 12.303 -22.559" rotation="0 36.370000000000005 0" scale="6 6 6" text="color:#000000"></a-text>
+        <a-text value="Mega Mall" position="-15.168 12.303 -31.292" rotation="0 36.37 0" scale="6 6 6" text="color:#000000"></a-text>
         <a-text value="Apartments" position="-13.457 9.124 16.514" rotation="0 113.09 0" scale="6 6 6" text="color:#000000"></a-text>
-        <a-text value="Fitness Center" position="16.895 7.388 -41.025" rotation="0 -20 0" scale="6 6 6" text="color:#000000"></a-text>
-        <a-text value="Cafe" position="31.546 8.767 -22.894" rotation="0 -30 0" scale="6 6 6" text="color:#000000"></a-text>
-
-        <!-- Buildings! -->
-        <a-collada-model id="Fitness-1" src="#tree_one" position="39.255 -0.075 -44.333" collada-model="assets/Italiandesignhotel1.0.dae" rotation="0 81.31 0" scale="1.2 1.2 1.2"></a-collada-model>
-        <a-collada-model id="Apartment-1" src="#tree_one" position="-35.928 0.065 11.417" collada-model="assets/building_05.dae" rotation="0 168.37 0" scale="1.2 1.2 1.2"></a-collada-model>
-        <a-collada-model id="Apartment-2" src="#tree_one" position="-23.292 0.065 42.222" collada-model="assets/building_05.dae" rotation="0 90.46 0" scale="1.2 1.2 1.2"></a-collada-model>
-        <!-- <a-entity id="Mall-1" obj-model="mtl:assets/3D Mansion_OBJ.mtl;obj:assets/3D Mansion_OBJ.obj" scale="0.2 0.23 0.25" position="-27.983 -0.072 -38.912" rotation="0 2 0"></a-entity> -->
-        <a-entity id="new_mall_test" obj-model="mtl:assets/mall.mtl;obj:assets/mall.obj" position="-18.331 0 -34.753" rotation="0 106.79 0" scale="0.3 0.3 0.3"></a-entity>
-        <a-sound id="Mall Sounds" src="#mall_sounds" autoplay="true" loop="true" position="-12.336 0 -22.308" volume="20" sound="distanceModel:exponential"></a-sound>
-        <a-sound id="Mall Sounds-2" src="#mall_sounds" autoplay="true" loop="true" position="-6.403 0 -46.227" volume="20" sound="distanceModel:exponential"></a-sound>
-        <a-sound id="Sounds-2" src="#mall_sounds" autoplay="true" loop="true" position="-31.872 0 -28.333" volume="20" sound="distanceModel:exponential"></a-sound>
-
-
-
+        <a-text value="Fitness Center" position="44.648 8.99 -36.709" scale="6 6 6" text="color:#000000"></a-text>
+        <a-text value="Cafe" position="19.766 7.855 -24.995" rotation="0 -45.03 0" scale="6 6 6" text="color:#000000"></a-text>
 
         <!-- Stoplights! -->
         <a-entity id="StopLight-1" obj-model="mtl:assets/StopLight_1370.mtl;obj:assets/StopLight_1370.obj" scale="0.05 0.05 0.04" position="12.555 -0.051 -16.091" rotation="0 -6 0"></a-entity>
@@ -101,25 +97,78 @@
         <a-box id="Sidewalk 7" depth="50" height="0.1" width="2" position="35.901 0 -14.792" geometry="depth:52" src="#sidewalk_texture" repeat="1 60" rotation="0 90 0"></a-box>
         <a-box id="Sidewalk 8" depth="50" height="0.1" width="2" position="13.956 -0.001 -33.297" geometry="depth:38.519999999999996" src="#sidewalk_texture" repeat="1 60" rotation="0 -8.91 0"></a-box>
 
+        <!-- Cars! -->
+        <a-entity id="Mercedes SLK-1" obj-model="mtl:assets/SLK.mtl;obj:assets/SLK.obj" scale="0.011 0.011 0.011" position="1.821 1.91 2.295" rotation="0 180 0"></a-entity>
+
+        <!-- Buildings! -->
+        <!-- <a-entity id="Mall-1" obj-model="mtl:assets/3D Mansion_OBJ.mtl;obj:assets/3D Mansion_OBJ.obj" scale="0.2 0.23 0.25" position="-27.983 -0.072 -38.912" rotation="0 2 0"></a-entity> -->
+        <a-entity id="new_mall_test" obj-model="mtl:assets/mall.mtl;obj:assets/mall.obj" position="-33.831 -0.111 -43.346" rotation="0 140.07 0" scale="0.4 0.3 0.4"></a-entity>
+        <a-sound id="Mall Sounds" src="#mall_sounds" autoplay="true" loop="true" position="-12.336 0 -22.308" volume="20" sound="distanceModel:exponential"></a-sound>
+        <a-sound id="Mall Sounds-2" src="#mall_sounds" autoplay="true" loop="true" position="-6.403 0 -46.227" volume="20" sound="distanceModel:exponential"></a-sound>
+        <a-sound id="Sounds-2" src="#mall_sounds" autoplay="true" loop="true" position="-31.872 0 -28.333" volume="20" sound="distanceModel:exponential"></a-sound>
+        <a-entity id="Cafe" obj-model="mtl:assets/low_poly_bilding.mtl;obj:assets/low_poly_bilding.obj" position="26.786 0.97 -31.367" scale="0.005 0.005 0.005" rotation="0 -4.529999999999999 0"></a-entity>
+        <a-entity id="Fitness center" obj-model="mtl:assets/3D Mansion_OBJ.mtl;obj:assets/3D Mansion_OBJ.obj" position="38.534 -0.733 -45.494" scale="0.185 0.11 0.13" rotation="0 -4.5 0"></a-entity>
+
+        <!-- Apartments! -->
+        <a-collada-model id="Apartment-1" src="#Apartment" position="-35.928 0.065 11.417" collada-model="assets/building_05.dae" rotation="0 168.37 0" scale="1.2 1.2 1.2"></a-collada-model>
+        <a-collada-model id="Apartment-2" src="#Apartment" position="-23.292 0.065 42.222" collada-model="assets/building_05.dae" rotation="0 90.46 0" scale="1.2 1.2 1.2"></a-collada-model>
+
+        <!-- Apartments Parking Lot! -->
+        <a-box id="Apartment Parking Lot-1" depth="20" height="0.1" width="5" position="-22.283 0 5.072" geometry="depth:8.5;width:7.5" src="#parking_lot" repeat="1 1" rotation="0 90 0"></a-box>
+        <a-box id="Apartment Parking Lot-2" depth="20" height="0.1" width="5" position="-22.283 0 13.393" geometry="depth:8.5;width:7.5" src="#parking_lot" repeat="1 1" rotation="0 90 0"></a-box>
+        <a-box id="Apartment Parking Lot-3" depth="20" height="0.1" width="5" position="-22.283 0 21.684" geometry="depth:8.5;width:7.5" src="#parking_lot" repeat="1 1" rotation="0 90 0" material=""></a-box>
+        <a-box id="Apartment Parking Lot-4" depth="20" height="0.1" width="5" position="-22.283 0 29.929" geometry="depth:8.5;width:7.5" src="#parking_lot" repeat="1 1" rotation="0 90 0"></a-box>
+        <a-box id="Apartment Parking Lot-5" depth="20" height="0.1" width="5" position="-10.851 0 25.882" geometry="depth:8.5;width:7.5" src="#parking_lot" repeat="1 1" rotation="0 -90 0"></a-box>
+        <a-box id="Apartment Parking Lot-6" depth="20" height="0.1" width="5" position="-10.842 0 17.535" geometry="depth:8.5;width:7.5" src="#parking_lot" repeat="1 1" rotation="0 -90 0"></a-box>
+        <a-box id="Apartment Parking Lot-7" depth="20" height="0.1" width="5" position="-10.842 0 9.184" geometry="depth:8.5;width:7.5" src="#parking_lot" repeat="1 1" rotation="0 -90 0"></a-box>
+        <a-box id="Apartment Background-1" depth="20" height="0.1" width="5" position="-17.956 -0.003 25.669" geometry="depth:48.7;width:22.72" src="#parking_lot_background" repeat="5 5"></a-box>
+        <a-box id="Apartment Background-2" depth="20" height="0.1" width="5" position="-30.469 -0.003 3.455" geometry="depth:40;width:15" src="#parking_lot_background" repeat="1 5" rotation="0 -104.97 0"></a-box>
+        <a-box id="Apartment Background-3" depth="20" height="0.1" width="5" position="-49.578 -0.003 1.686" geometry="width:5.64;depth:25.04" src="#parking_lot_background" repeat="1 3" rotation="0 5.779999999999999 0"></a-box>
+        <a-entity id="Parked Mercedes SLK-1" obj-model="mtl:assets/SLK.mtl;obj:assets/SLK.obj" scale="0.011 0.011 0.011" position="-25.865 1.960 25.697" rotation="0 -89.12 0"></a-entity>
+        <a-entity id="Parked Mercedes SLK-2" obj-model="mtl:assets/SLK.mtl;obj:assets/SLK.obj" scale="0.011 0.011 0.011" position="-26.159 1.960 21.501" rotation="0 -88.7 0"></a-entity>
+        <a-entity id="Parked Mercedes SLK-3" obj-model="mtl:assets/SLK.mtl;obj:assets/SLK.obj" scale="0.011 0.011 0.011" position="-7.017 1.960 22.077" rotation="0 85.24 0"></a-entity>
+        <a-entity id="Parked Mercedes SLK-4" obj-model="mtl:assets/SLK.mtl;obj:assets/SLK.obj" scale="0.011 0.011 0.011" position="-7.086 1.960 9.462" rotation="0 89.16 0"></a-entity>
+
+        <!-- Apartments Garden! -->
+        <a-box id="Apartment Garden" geometry="width:21.91;depth:36.66;height:0.1" position="-40.262 0 31.706" src="#grass" repeat="24 20"></a-box>
+        <a-collada-model id="Garden tree-1" src="#tree_one" position="-46.659 0 45.282" scale="4.5 4.5 4.5" collada-model="assets/tree1.dae" rotation="0 -47.33 0"></a-collada-model>
+        <a-collada-model id="Garden tree-2" src="#tree_one" position="-43.358 0 41.785" scale="3.25 3.25 3.25" collada-model="assets/tree1.dae" rotation="0 -11.01 0"></a-collada-model>
+        <a-collada-model id="Garden tree-3" src="#tree_one" position="-40.552 0 46.893" scale="3 3 3" collada-model="assets/tree1.dae" rotation="0 72.97 0"></a-collada-model>
+        <a-collada-model id="Garden tree-4" src="#tree_one" position="-30.803 0 20.37" scale="2.5 2.5 2.5" collada-model="assets/tree1.dae" rotation="0 15 0"></a-collada-model>
+        <a-collada-model id="Garden tree-5" src="#tree_one" position="-49.281 0 27.279" scale="2.8 2.8 2.8" collada-model="assets/tree1.dae" rotation="0 -46.989999999999995 0"></a-collada-model>
+        <a-entity id="Apartment bench-1" obj-model="mtl:assets/wood_bench.mtl;obj:assets/wood_bench.obj" scale="0.0012 0.0012 0.0012" position="-37.31 -0.060 41.907" rotation="0 -45 0"></a-entity>
+        <a-entity id="Apartment bench-2" obj-model="mtl:assets/wood_bench.mtl;obj:assets/wood_bench.obj" scale="0.0012 0.0012 0.0012" position="-45.14 -0.060 31.936" rotation="0 -45 0"></a-entity>
+
+        <!-- Cafe/Fitness Center Parking Lot! -->
+        <a-box id="Cafe/Fitness Center Parking Lot-1" depth="20" height="0.1" width="5" position="43.486 0 -30.319" geometry="depth:8.5;width:7.5" src="#parking_lot" repeat="1 1" rotation="0 86.82 0"></a-box>
+        <a-box id="Cafe/Fitness Center Parking Lot-2" depth="20" height="0.1" width="5" position="43.021 0 -22.091" geometry="depth:8.5;width:7.5" src="#parking_lot" repeat="1 1" rotation="0 86.82 0"></a-box>
+        <a-box id="Cafe/Fitness Center Parking Lot-3" depth="20" height="0.1" width="5" position="56.656 0 -35.707" geometry="depth:8.5;width:7.5" src="#parking_lot" repeat="1 1" rotation="0 -92.77 0"></a-box>
+        <a-box id="Cafe/Fitness Center Parking Lot-4" depth="20" height="0.1" width="5" position="56.265 0 -27.78" geometry="depth:8.5;width:7.5" src="#parking_lot" repeat="1 1" rotation="0 -92.77 0"></a-box>
+        <a-box id="Cafe/Fitness Center Parking Lot-5" depth="20" height="0.1" width="5" position="55.881 0 -19.877" geometry="depth:8.5;width:7.5" src="#parking_lot" repeat="1 1" rotation="0 -92.77 0"></a-box>
+        <a-entity id="Parked Mercedes SLK-5" obj-model="mtl:assets/SLK.mtl;obj:assets/SLK.obj" scale="0.011 0.011 0.011" position="59.753 1.988 -35.478" rotation="0 89.16 0"></a-entity>
+        <a-entity id="Parked Mercedes SLK-6" obj-model="mtl:assets/SLK.mtl;obj:assets/SLK.obj" scale="0.011 0.011 0.011" position="59.646 1.988 -31.574" rotation="0 90.89 0"></a-entity>
+        <a-entity id="Parked Mercedes SLK-7" obj-model="mtl:assets/SLK.mtl;obj:assets/SLK.obj" scale="0.011 0.011 0.011" position="39.361 1.964 -27.379" rotation="0 -98.92 0"></a-entity>
+        <a-entity id="Parked Mercedes SLK-8" obj-model="mtl:assets/SLK.mtl;obj:assets/SLK.obj" scale="0.011 0.011 0.011" position="39.06 1.964 -19.03" rotation="0 -95.46000000000001 0"></a-entity>
+
         <!-- All things related to the park! -->
+        <a-box id="The Park Grass" geometry="width:38.69;height:0.1;depth:50" position="30.994 0 27.561" src="#grass" repeat="30 30"></a-box>
         <a-collada-model id="Park Tree Two" src="#tree_one" position="33.254 0 36.634" scale="3 3 3" collada-model="assets/tree1.dae"></a-collada-model>
         <a-collada-model id="Park Tree Five" src="#tree_one" position="36.394 0 38.205" scale="5 5 5" collada-model="assets/tree1.dae"></a-collada-model>
         <a-entity id="Park Tree Six-2" obj-model="mtl:assets/tree01.mtl;obj:assets/tree01.obj" position="32.756 0 40.017" rotation="0 10 0" scale="0.02 0.02 0.02"></a-entity>
         <a-sound id="Bird Sounds" src="#birds" autoplay="true" loop="true" position="19.603 10.053 15.874" volume="10" sound=""></a-sound>
         <a-sound id="Bird Sounds2" src="#birds" autoplay="true" loop="true" position="19.603 10.053 37.656" volume="10"></a-sound>
-        <a-entity id="Pond-1" obj-model="mtl:assets/pond.mtl;obj:assets/pond.obj" scale="4 4 4" position="43.45 0.404 44.712" rotation="0 250 0"></a-entity>
+        <a-entity id="PUSHILIN_pond-1" obj-model="mtl:assets/PUSHILIN_pond.mtl;obj:assets/PUSHILIN_pond.obj" scale="4 4 4" position="43.45 0.404 44.712" rotation="0 266.07 0"></a-entity>
+        <a-circle id="Water-1" radius="2" width="2" position="43.28 0.052 44.3" geometry="radius:2.5" color="blue" rotation="-90 0 0" material=""></a-circle>
+        <a-circle id="Water-2" radius="2" width="2" position="43.681 0.051 46.511" geometry="radius:2.02" color="blue" rotation="-90 0 0"></a-circle>
 
                 <!-- Benches! -->
         <a-entity id="Bench-1" obj-model="mtl:assets/Park_Bench.mtl;obj:assets/Park Bench.obj" scale="0.007 0.007 0.007" position="34.166 0.419 35.558" rotation="0 149.18999999999997 0"></a-entity>
         <a-entity id="Bench-2" obj-model="mtl:assets/Park_Bench.mtl;obj:assets/Park Bench.obj" scale="0.007 0.007 0.007" position="35.413 0.419 39.666" rotation="0 -5.580000000000002 0"></a-entity>
         <a-entity id="Bench-3" obj-model="mtl:assets/Park_Bench.mtl;obj:assets/Park Bench.obj" scale="0.007 0.007 0.007" position="31.601 0.419 39.286" rotation="0 -120.22000000000001 0"></a-entity>
-        <a-entity id="Bench-4" obj-model="mtl:assets/Park_Bench.mtl;obj:assets/Park Bench.obj" scale="0.007 0.007 0.007" position="31.426 0.419 6.413"></a-entity>
-        <a-entity id="Bench-5" obj-model="mtl:assets/Park_Bench.mtl;obj:assets/Park Bench.obj" scale="0.007 0.007 0.007" position="40.204 0.419 6.413"></a-entity>
-        <a-entity id="Bench-6" obj-model="mtl:assets/Park_Bench.mtl;obj:assets/Park Bench.obj" scale="0.007 0.007 0.007" position="47.067 0.427 12.818" rotation="0 -90 0"></a-entity>
-        <a-entity id="Bench-7" obj-model="mtl:assets/Park_Bench.mtl;obj:assets/Park Bench.obj" scale="0.007 0.007 0.007" position="46.954 0.427 19.926" rotation="0 -90 0"></a-entity>
-        <a-entity id="Bench-8" obj-model="mtl:assets/Park_Bench.mtl;obj:assets/Park Bench.obj" scale="0.007 0.007 0.007" position="14.782 0.427 19.926" rotation="0 90 0"></a-entity>
-        <a-entity id="Bench-9" obj-model="mtl:assets/Park_Bench.mtl;obj:assets/Park Bench.obj" scale="0.007 0.007 0.007" position="14.782 0.427 28.238" rotation="0 90 0"></a-entity>
-        <a-entity id="Bench-10" obj-model="mtl:assets/Park_Bench.mtl;obj:assets/Park Bench.obj" scale="0.007 0.007 0.007" position="14.782 0.427 35.742" rotation="0 90 0"></a-entity>
+        <a-entity id="Bench-4" obj-model="mtl:assets/Park_Bench.mtl;obj:assets/Park Bench.obj" scale="0.007 0.007 0.007" position="40.204 0.419 6.413"></a-entity>
+        <a-entity id="Bench-5" obj-model="mtl:assets/Park_Bench.mtl;obj:assets/Park Bench.obj" scale="0.007 0.007 0.007" position="46.954 0.427 19.926" rotation="0 -90 0"></a-entity>
+        <a-entity id="Bench-6" obj-model="mtl:assets/Park_Bench.mtl;obj:assets/Park Bench.obj" scale="0.007 0.007 0.007" position="14.782 0.427 19.926" rotation="0 90 0"></a-entity>
+        <a-entity id="Bench-7" obj-model="mtl:assets/Park_Bench.mtl;obj:assets/Park Bench.obj" scale="0.007 0.007 0.007" position="14.782 0.427 35.742" rotation="0 90 0"></a-entity>
 
                 <!-- Playground stuff! -->
         <a-entity id="Jungle Gym" obj-model="mtl:assets/JungleGym.mtl;obj:assets/JungleGym.obj" scale="0.3 0.3 0.3" position="37.49 -0.051 22.378" rotation="0 45 0"></a-entity>
